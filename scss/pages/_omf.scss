@@ -1,42 +1,236 @@
-body{
-    background: #fff;
+main {
+	
+	border-top-left-radius: 25px;
+	
+	border-top-right-radius: 25px;
+	position: relative;
+	top: -1.5rem;
+	background-color: white;
 }
-a{
-  text-decoration: none;
-  color: black;
+header {
+	height: 62px;
+	background-color: white;
+	.arrow {
+		position: absolute;
+		top: 1.5rem;
+		left: 1.5rem;
+		font-size: 1.25rem;
+	}
+	> .logoohmyfood {
+		display: flex;
+		justify-content: center;
+		font-family: $cd-police;
+		font-size: 1.8rem;
+	}
+}
+.carte {
+	h2 {
+		font-weight: 300;
+		margin: 2.5rem 0 1rem 1.2rem;
+		font-size: 1rem;
+	}
+	h2::after {
+		content: "";
+		display: block;
+		width: 38px;
+		height: 0;
+		margin-top: 5px;
+	}
+}
+//RESTAURANTS
+.restaurants_card {
+	display: flex;
+	flex-wrap: wrap;
+    background-color: #F2F2F2;
+    padding: 0.375rem;
+    border-radius: 1.5rem;
+    box-shadow: 0 0 16px #0000002e;
+    transition-duration: 0.1s;
+    cursor: pointer;
+    box-sizing: border-box;
+    height: 60%;
+    width: 100%;
+	margin-bottom: 10px;
+}
+.card_new {
+	margin-top: 10px;
+  margin-left: -100px;
+  position: absolute;
+  background-color: #99e2d0;
+  color: #1b6150;
+  padding: .5rem;
+  border-radius: 0.125rem;
+}
+.destination {
+	content: "f3c5";
 }
 
+.restaurants_img {
+  width: 100%;
+  border-radius: 1.25rem;
+  max-height: 100px;
+  object-fit: cover;
+}
 
-.info{
-  padding-bottom: 40px;
-  background-color:  #f6f6f6;
-  font-family: $cd-police;
-  display: flex;
-  flex-direction: column;
-
-  &-tittle{
-    margin-top: 30px;
-    font-weight: bold;
-    font-size: 24px;
-    text-align: center;
-  }
-
-  &-prefaxe{
-    text-align: center;
-    padding: 14px 0;
-  }
-  &-btn{
-    border: none;
-    margin: 0 auto;
-    padding: 14px;
-    border-radius: 20px;
-    box-shadow: 4px 4px 4px #d2d2d2;
-    font-family: $cd-police;
-  }
-  &-btn a{
-    color: #fff;
-  }
-  &-btn:hover{
-    opacity: .8;
-  }
+//FOOTER
+footer {
+	padding: 1.2rem 0 2.5rem 1.2rem;
+	background-color: grey;
+	.logoohmyfood_footer {
+		display: block;
+		margin-bottom: .5rem;
+		font-family: $cd-police;
+		font-size: 1.1rem;
+		color: white;
+	}
+	a {
+		display: block;
+		margin: .3rem;
+		color: white;
+		&:hover {
+			text-decoration: underline;
+		}
+		> {
+			.fork {
+				margin-right: 1rem;
+				font-size: .8rem;
+			}
+			.hands {
+				margin-right: .7rem;
+				font-size: .8rem;
+			}
+		}
+	}
+}
+@media all and(min-width: 700px) {
+	footer {
+		padding: 2.2rem 0 2.5rem 4.2rem;
+	}
+}
+.enseigne {
+	display: flex;
+	justify-content: space-between;
+	padding: 2rem 15px 0 0;
+	margin: -1rem 1.2rem 0 1.2rem;
+	> h1 {
+		font-family: $cd-police;
+		font-size: 1.8rem;
+	}
+}
+.global {
+	overflow: hidden;
+	position: relative;
+	
+	box-shadow: 0 0.5rem 1rem grey;
+	margin: 1rem;
+	
+	border-radius: 15px;
+	background-color: white;
+	cursor: pointer;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	.details {
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		padding: 0.8rem 1.4rem 0.8rem 0.8rem;
+		h3 {
+			font-size: 1.1rem;
+			font-weight: 600;
+			white-space: nowrap;
+			overflow: hidden;
+			margin-bottom: 0.4rem;
+			text-overflow: ellipsis;
+		}
+		p {
+			font-size: 0.9rem;
+			white-space: nowrap;
+			overflow: hidden;
+			text-overflow: ellipsis;
+		}
+	}
+	span {
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		margin-right: 0;
+		font-weight: 600;
+		width: 20px;
+		padding: 0 .8rem .8rem 0;
+		margin-right: 1.5rem;
+		
+		transition: margin-right 0.4s;
+	}
+}
+button {
+	opacity: 1;
+	
+	border-radius: 50px;
+	border: transparent;
+	
+	box-shadow: 0 7px 10px grey;
+	max-height: 50px;
+	margin: auto;
+	padding: 1rem;
+	justify-content: center;
+	font-size: 1rem;
+	font-weight: 500;
+	
+	transition: opacity 500ms, box-shadow 500ms;
+	&:hover {
+		cursor: pointer;
+		opacity: .8;
+		
+		box-shadow: 0 10px 5px grey;
+	}
+	> span {
+		color: white;
+	}
+}
+.btn {
+	display: flex;
+	justify-content: center;
+	max-height: 50px;
+	&__action {
+    background: linear-gradient($color-primary,$color-secondary);
+		font-size: 1rem;
+		font-weight: 500;
+		> span {
+			padding: 0 15px;
+		}
+	}
+}
+.btn_link {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	> .commander {
+		margin: 2rem 0 6rem;
+		> span {
+			padding: 0 40px;
+		}
+	}
+}
+@media(min-width: 432px) {
+	main .menu {
+		gap: 20px;
+	}
+}
+@media(min-width: 700px) {
+	img {
+		max-height: 400px;
+	}
+	.carte {
+		padding: 2rem;
+		h2 {
+			max-width: 1000px;
+			margin: 2rem auto 1rem auto;
+		}
+		.global {
+			margin: 0 auto 20px auto;
+			min-width: 636px;
+			max-width: 850px;
+		}
+	}
 }
