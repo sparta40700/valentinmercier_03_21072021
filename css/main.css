@@ -89,6 +89,10 @@ table {
   font-family: "Roboto", "Shrikhand", sans-serif;
 }
 
+body {
+  position: relative;
+}
+
 @-webkit-keyframes loader {
   0% {
     width: 10%;
@@ -244,6 +248,8 @@ table {
 .pan-loader {
   z-index: 10;
   position: fixed;
+  top: 20%;
+  left: 50%;
   width: 180px;
   height: 180px;
   margin: 100px auto;
@@ -448,6 +454,21 @@ header > .logoohmyfood {
   max-height: 100px;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.fa-heart {
+  position: absolute;
+  right: 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 26px;
+  -webkit-text-stroke: 1px white;
+}
+
+.shape_hrt {
+  opacity: 0;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
 }
 
 footer {

@@ -112,7 +112,20 @@ header {
   max-height: 100px;
   object-fit: cover;
 }
-//FOOTER
+.fa-heart{
+	position: absolute;
+    right: 20px;
+	box-sizing: border-box;
+    font-size: 26px;
+    -webkit-text-stroke: 1px white;
+}
+.shape_hrt {
+	opacity: 0;
+    -webkit-transition: .3s ease;
+    transition: .3s ease;
+}
+
+	//FOOTER
 footer {
 	padding: 1.2rem 0 2.5rem 1.2rem;
 	background-color: grey;
