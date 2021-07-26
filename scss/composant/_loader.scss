@@ -5,6 +5,10 @@ $pan-color-light: #3949AB;
 $pan-color-dark: #5C6BC0;
 $loader-color: #FDD835;
 
+body {
+  position: relative;
+}
+
 @keyframes loader {
   0% {
     width: 10%;
@@ -74,6 +78,8 @@ $loader-color: #FDD835;
 .pan-loader {
     z-index: 10;
     position: fixed;
+    top: 20%;
+    left: 50%;
   width: $component-dimension;
   height: $component-dimension;
   margin: 100px auto;
