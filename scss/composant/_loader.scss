@@ -72,6 +72,8 @@ $loader-color: #FDD835;
 }
 
 .pan-loader {
+    z-index: 10;
+    position: fixed;
   width: $component-dimension;
   height: $component-dimension;
   margin: 100px auto;

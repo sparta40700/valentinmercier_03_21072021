@@ -242,6 +242,8 @@ table {
 }
 
 .pan-loader {
+  z-index: 10;
+  position: fixed;
   width: 180px;
   height: 180px;
   margin: 100px auto;
@@ -337,20 +339,74 @@ header > .logoohmyfood {
   font-size: 1.8rem;
 }
 
-.carte h2 {
-  font-weight: 300;
-  margin: 2.5rem 0 1rem 1.2rem;
-  font-size: 1rem;
+/*****PRESENTATION*****/
+.localisation {
+  text-align: center;
+  margin-top: 2px;
+  background-color: #eaeaea;
+  padding: 0.75em 0;
+  font-family: "Roboto", sans-serif;
 }
 
-.carte h2::after {
-  content: "";
-  display: block;
-  width: 38px;
-  height: 0;
-  margin-top: 5px;
+.presentation {
+  padding-bottom: 40px;
+  background-color: #f6f6f6;
+  font-family: "Roboto", sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
+.presentation_title {
+  margin-top: 30px;
+  font-weight: bold;
+  font-size: 24px;
+  text-align: center;
+}
+
+.presentation_sub {
+  text-align: center;
+  padding: 14px 0;
+}
+
+/*****FONCTIONNEMENT****/
+.fonctionnement_title {
+  margin-top: 30px;
+  font-size: 1.24em;
+}
+
+.steps {
+  padding: 24px 40px;
+  background-color: #fff;
+  margin: 30px 12px;
+  border-radius: 14px;
+  -webkit-box-shadow: 3px 3px 10px #c0c0c0;
+  box-shadow: 3px 3px 10px #c0c0c0;
+  position: relative;
+}
+
+.steps_number {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 24px 40px;
+  background-color: #fff;
+  margin: 30px 12px;
+  border-radius: 14px;
+  -webkit-box-shadow: 3px 3px 10px #c0c0c0;
+          box-shadow: 3px 3px 10px #c0c0c0;
+  position: relative;
+}
+
+/******RESTAURANTS*******/
 .restaurants_card {
   display: -webkit-box;
   display: -ms-flexbox;
