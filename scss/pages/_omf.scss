@@ -1,289 +1,79 @@
-@import "../composant/loader";
-
-main {
-	
-	border-top-left-radius: 25px;
-	
-	border-top-right-radius: 25px;
-	position: relative;
-	top: -1.5rem;
-	background-color: white;
-}
-header {
-	height: 62px;
-	background-color: white;
-	.arrow {
-		position: absolute;
-		top: 1.5rem;
-		left: 1.5rem;
-		font-size: 1.25rem;
-	}
-	> .logoohmyfood {
-		display: flex;
-		justify-content: center;
-		font-family: $cd-police;
-		font-size: 1.8rem;
-	}
+/*****HEADER*****/
+.logoohmyfood {
+  font-family: $cd-police1;
+  font-size: 30px;
 }
 /*****PRESENTATION*****/
-.localisation {
-	text-align: center;
-    margin-top: 2px;
-    background-color: #eaeaea;
-    padding: 0.75em 0;
-    font-family: "Roboto", sans-serif;
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-.presentation {
-    padding-bottom: 40px;
-    background-color: #f6f6f6;
-    font-family: "Roboto", sans-serif;
+.presentationglobal {
+  background-color: #f6f6f6;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  box-sizing: border-box;
+  justify-content: center;
+  width: 100%;
+  height: 100px;
+  //box-shadow: 0 0 17px red;
+}
+.presentation_title {
+  text-align: center;
+}
+.localisation {
+  display: flex;
+  max-width: 100%;
+  align-items: center;
+  box-sizing: border-box;
+  justify-content: center;
+  height: 32px;
+  box-sizing: border-box;
+  width: 100%;
+  background-color: #eaeaead0;
+}
+.btn {
+  display: flex;
+  justify-content: center;
+  &_action {
     display: flex;
     flex-direction: column;
-	 
-	 &_title {
-		margin-top: 30px;
-		font-weight: bold;
-		font-size: 24px;
-		text-align: center;
-	 }
-	 &_sub {
-		text-align: center;
-		padding: 14px 0;
-	 }
+    justify-content: center;
+    height: 32px;
+    border-radius: 1.25rem;
+    background: linear-gradient(#d66cdb, #a45cdb);
+    border: none;
+  }
 }
 /*****FONCTIONNEMENT****/
 .fonctionnement {
-	&_title {
-		margin-top: 30px;
-        font-size: 1.24em;
-	}
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
 }
 .steps {
-	padding: 24px 40px;
-    background-color: #fff;
-    margin: 30px 12px;
-    border-radius: 14px;
-    -webkit-box-shadow: 3px 3px 10px #c0c0c0;
-    box-shadow: 3px 3px 10px #c0c0c0;
-    position: relative;
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+  box-shadow: 0 0 17px rgb(170, 170, 170);
+  border-radius: 1.25rem;
+  padding: 17px;
+  margin-top: 3px;
 }
 .steps_number {
-	display: flex;
-	flex-direction: row;
-	padding: 24px 40px;
-    background-color: #fff;
-    margin: 30px 12px;
-    border-radius: 14px;
-    box-shadow: 3px 3px 10px #c0c0c0;
-    position: relative;
-}
-
-/******RESTAURANTS*******/
-.restaurants_card {
-	display: flex;
-	flex-wrap: wrap;
-    background-color: #F2F2F2;
-    padding: 0.375rem;
-    border-radius: 1.5rem;
-    box-shadow: 0 0 16px #0000002e;
-    transition-duration: 0.1s;
-    cursor: pointer;
-    box-sizing: border-box;
-    height: 60%;
-    width: 100%;
-	margin-bottom: 10px;
-}
-.card_new {
-	margin-top: 10px;
-  margin-left: -100px;
-  position: absolute;
-  background-color: #99e2d0;
-  color: #1b6150;
-  padding: .5rem;
-  border-radius: 0.125rem;
-}
-.destination {
-	content: "f3c5";
-}
-
-.restaurants_img {
-  width: 100%;
+  margin-left: -20px;
+  background-color: #9356dc;
   border-radius: 1.25rem;
-  max-height: 100px;
+}
+/******RESTAURANTS*******/
+.restaurants_img {
+  border-radius: 1.25rem 1.25rem 0 0;
+  width: 100%;
+  height: 150px;
   object-fit: cover;
 }
-.fa-heart{
-	position: absolute;
-    right: 20px;
-	box-sizing: border-box;
-    font-size: 26px;
-    -webkit-text-stroke: 1px white;
-}
-.shape_hrt {
-	opacity: 0;
-    -webkit-transition: .3s ease;
-    transition: .3s ease;
-}
-
-	//FOOTER
-footer {
-	padding: 1.2rem 0 2.5rem 1.2rem;
-	background-color: grey;
-	.logoohmyfood_footer {
-		display: block;
-		margin-bottom: .5rem;
-		font-family: $cd-police;
-		font-size: 1.1rem;
-		color: white;
-	}
-	a {
-		display: block;
-		margin: .3rem;
-		color: white;
-		&:hover {
-			text-decoration: underline;
-		}
-		> {
-			.fork {
-				margin-right: 1rem;
-				font-size: .8rem;
-			}
-			.hands {
-				margin-right: .7rem;
-				font-size: .8rem;
-			}
-		}
-	}
-}
-@media all and(min-width: 700px) {
-	footer {
-		padding: 2.2rem 0 2.5rem 4.2rem;
-	}
-}
-.enseigne {
-	display: flex;
-	justify-content: space-between;
-	padding: 2rem 15px 0 0;
-	margin: -1rem 1.2rem 0 1.2rem;
-	> h1 {
-		font-family: $cd-police;
-		font-size: 1.8rem;
-	}
-}
-.global {
-	overflow: hidden;
-	position: relative;
-	
-	box-shadow: 0 0.5rem 1rem grey;
-	margin: 1rem;
-	
-	border-radius: 15px;
-	background-color: white;
-	cursor: pointer;
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	.details {
-		white-space: nowrap;
-		overflow: hidden;
-		text-overflow: ellipsis;
-		padding: 0.8rem 1.4rem 0.8rem 0.8rem;
-		h3 {
-			font-size: 1.1rem;
-			font-weight: 600;
-			white-space: nowrap;
-			overflow: hidden;
-			margin-bottom: 0.4rem;
-			text-overflow: ellipsis;
-		}
-		p {
-			font-size: 0.9rem;
-			white-space: nowrap;
-			overflow: hidden;
-			text-overflow: ellipsis;
-		}
-	}
-	span {
-		position: absolute;
-		right: 0;
-		bottom: 0;
-		margin-right: 0;
-		font-weight: 600;
-		width: 20px;
-		padding: 0 .8rem .8rem 0;
-		margin-right: 1.5rem;
-		
-		transition: margin-right 0.4s;
-	}
-}
-button {
-	opacity: 1;
-	
-	border-radius: 50px;
-	border: transparent;
-	
-	box-shadow: 0 7px 10px grey;
-	max-height: 50px;
-	margin: auto;
-	padding: 1rem;
-	justify-content: center;
-	font-size: 1rem;
-	font-weight: 500;
-	
-	transition: opacity 500ms, box-shadow 500ms;
-	&:hover {
-		cursor: pointer;
-		opacity: .8;
-		
-		box-shadow: 0 10px 5px grey;
-	}
-	> span {
-		color: white;
-	}
-}
-.btn {
-	display: flex;
-	justify-content: center;
-	max-height: 50px;
-	&__action {
-    background: linear-gradient($color-primary,$color-secondary);
-		font-size: 1rem;
-		font-weight: 500;
-		> span {
-			padding: 0 15px;
-		}
-	}
-}
-.btn_link {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	> .commander {
-		margin: 2rem 0 6rem;
-		> span {
-			padding: 0 40px;
-		}
-	}
-}
-@media(min-width: 432px) {
-	main .menu {
-		gap: 20px;
-	}
-}
-@media(min-width: 700px) {
-	img {
-		max-height: 400px;
-	}
-	.carte {
-		padding: 2rem;
-		h2 {
-			max-width: 1000px;
-			margin: 2rem auto 1rem auto;
-		}
-		.global {
-			margin: 0 auto 20px auto;
-			min-width: 636px;
-			max-width: 850px;
-		}
-	}
-}
+/******FOOTER********/
