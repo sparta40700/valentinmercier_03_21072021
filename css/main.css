@@ -222,28 +222,62 @@ main {
      object-fit: cover;
 }
 
+.restau_info {
+  color: black;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: 0 0 17px #aaaaaa;
+          box-shadow: 0 0 17px #aaaaaa;
+  border-radius: 0 0 1.25rem 1.25rem;
+  padding: 10px;
+  margin-top: -26px;
+  position: relative;
+}
+
+.new {
+  position: relative;
+  left: 140px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #99e2d0;
+  bottom: 137px;
+  width: 30%;
+  border-radius: 0.25rem;
+  padding: 3px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #43af94;
+}
+
 /******FOOTER********/
-.bas {
+.footer_content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer_content {
   background-color: #353535;
   color: #fff;
 }
 
-.bas-info {
-  margin-left: 16px;
-  padding: 25px 0 40px 0;
-}
-
-.bas-3 {
-  font-family: "Roboto";
-  margin-bottom: 20px;
-}
-
-.fa-utensils, .fa-hands-helping {
+.fa-utensils,
+.fa-hands-helping {
   margin-right: 10px;
+  color: white;
 }
 
-.bas-1title {
-  font-family: "Roboto";
+.logoohmyfood_footer {
+  font-family: "Shrikhand", sans-serif;
   color: white;
 }
 /*# sourceMappingURL=main.css.map */
