@@ -78,39 +78,136 @@ header {
   position: relative;
 }
 
-* {
-  background-color: white;
+/*****HEADER*****/
+.logoohmyfood {
+  font-family: "Shrikhand", sans-serif;
+  font-size: 30px;
 }
 
-@media screen and (max-width: 350px) {
-  /*****HEADER*****/
-  header .logoohmyfood {
-    padding: 10px;
-  }
-}
 /*****PRESENTATION*****/
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.presentationglobal {
+  background-color: #f6f6f6;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  box-sizing: border-box;
+  justify-content: center;
+  width: 100%;
+  height: 100px;
+}
+
+.presentation_title {
+  text-align: center;
+}
+
+.localisation {
+  display: flex;
+  max-width: 100%;
+  align-items: center;
+  box-sizing: border-box;
+  justify-content: center;
+  height: 32px;
+  box-sizing: border-box;
+  width: 100%;
+  background-color: #eaeaead0;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+}
+.btn_action {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 32px;
+  border-radius: 1.25rem;
+  background: linear-gradient(#d66cdb, #a45cdb);
+  border: none;
+}
+
 /*****FONCTIONNEMENT****/
+.fonctionnement {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.steps {
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+  box-shadow: 0 0 17px #aaaaaa;
+  border-radius: 1.25rem;
+  padding: 17px;
+  margin-top: 3px;
+}
+
+.steps_number {
+  margin-left: -20px;
+  background-color: #9356dc;
+  border-radius: 1.25rem;
+}
+
 /******RESTAURANTS*******/
+.restaurants_img {
+  border-radius: 1.25rem 1.25rem 0 0;
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.restau_info {
+  color: black;
+  box-sizing: border-box;
+  box-shadow: 0 0 17px #aaaaaa;
+  border-radius: 0 0 1.25rem 1.25rem;
+  padding: 10px;
+  margin-top: -26px;
+  position: relative;
+}
+
+.new {
+  position: relative;
+  left: 140px;
+  display: flex;
+  background-color: #99e2d0;
+  bottom: 137px;
+  width: 30%;
+  border-radius: 0.25rem;
+  padding: 3px;
+  justify-content: center;
+  color: #43af94;
+}
+
 /******FOOTER********/
-.bas {
+.footer_content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer_content {
   background-color: #353535;
   color: #fff;
 }
-.bas-info {
-  margin-left: 16px;
-  padding: 25px 0 40px 0;
-}
-.bas-3 {
-  font-family: "Roboto";
-  margin-bottom: 20px;
-}
 
-.fa-utensils, .fa-hands-helping {
+.fa-utensils,
+.fa-hands-helping {
   margin-right: 10px;
+  color: white;
 }
 
-.bas-1title {
-  font-family: "Roboto";
+.logoohmyfood_footer {
+  font-family: "Shrikhand", sans-serif;
   color: white;
 }
 
