@@ -105,6 +105,9 @@ main {
   height: 150px;
   object-fit: cover;
 }
+.restaurants_card {
+  position: relative;
+}
 .restau_info {
   color: black;
   box-sizing: border-box;
@@ -115,13 +118,12 @@ main {
   //position: relative;
 }
 .new {
-  position: relative;
+  position: absolute;
   flex-direction: row;
-  left: 140px;
+  top: 10px;
+  right: 10px;
   display: flex;
   background-color: #99e2d0;
-  bottom: 137px;
-  width: 30%;
   border-radius: 0.25rem;
   padding: 3px;
   justify-content: center;

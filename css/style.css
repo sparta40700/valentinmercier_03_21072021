@@ -78,10 +78,19 @@ header {
   position: relative;
 }
 
+* {
+  text-decoration: none;
+}
+
 /*****HEADER*****/
 .logoohmyfood {
   font-family: "Shrikhand", sans-serif;
   font-size: 30px;
+}
+
+.destination {
+  text-align: center;
+  border: none !important;
 }
 
 /*****PRESENTATION*****/
@@ -141,6 +150,12 @@ main {
   justify-content: flex-start;
 }
 
+.menuglobal {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
 .steps {
   display: flex;
   flex-direction: row;
@@ -151,10 +166,28 @@ main {
   margin-top: 3px;
 }
 
+.steps_card {
+  display: flex;
+  flex-direction: column;
+}
+
 .steps_number {
-  margin-left: -20px;
+  display: flex;
+  margin-left: -8px;
   background-color: #9356dc;
   border-radius: 1.25rem;
+  width: 20px;
+  height: 20px;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  margin-top: 15px;
+}
+
+.fa-mobile-alt,
+.fa-bars,
+.fa-store {
+  margin-right: 6px;
 }
 
 /******RESTAURANTS*******/
@@ -171,12 +204,11 @@ main {
   box-shadow: 0 0 17px #aaaaaa;
   border-radius: 0 0 1.25rem 1.25rem;
   padding: 10px;
-  margin-top: -26px;
-  position: relative;
 }
 
 .new {
   position: relative;
+  flex-direction: row;
   left: 140px;
   display: flex;
   background-color: #99e2d0;
@@ -193,6 +225,10 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+footer a {
+  color: white;
 }
 
 .footer_content {
