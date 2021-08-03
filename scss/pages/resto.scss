@@ -1,0 +1,67 @@
+@import "../utils/variable";
+@import "../layout/footer";
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+main {
+  background-color: #f6f6f6;
+  border-radius: 1.25rem 1.25rem 0 0;
+}
+.logoohmyfood {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-family: $cd-police1;
+}
+.img_resto1,
+.img_resto2,
+.img_resto3,
+.img_resto4 {
+  width: 100%;
+  object-fit: cover;
+}
+.enseigne {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border-radius: 1.25rem 1.25rem 0 0;
+  padding: 10px;
+}
+h1 {
+  font-family: $cd-police1;
+  font-size: 25px;
+}
+h2 {
+  font-size: 13px;
+  margin: 10px;
+  border-top: none;
+  border-bottom: 3px solid #99e2d0;
+  width: 11%;
+}
+footer {
+  background-color: #353535;
+}
+.global {
+  box-sizing: border-box;
+  padding: 10px;
+  border-radius: 1.25rem;
+  background: #ffffff;
+  margin-bottom: 10px;
+}
+.commander {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 32px;
+  border-radius: 1.25rem;
+  background: linear-gradient(#d66cdb, #a45cdb);
+  border: none;
+  padding: 10px;
+}
+.btn_link {
+  display: flex;
+  justify-content: center;
+}

@@ -109,11 +109,19 @@ main {
   box-sizing: border-box;
   justify-content: center;
   width: 100%;
-  height: 100px;
+  height: 150px;
 }
 
 .presentation_title {
   text-align: center;
+  margin: 0 auto;
+  width: 64%;
+  font-weight: bolder;
+}
+
+.presentation_sub {
+  text-align: center;
+  padding: 5px;
 }
 
 .localisation {
@@ -198,6 +206,10 @@ main {
   object-fit: cover;
 }
 
+.restaurants_card {
+  position: relative;
+}
+
 .restau_info {
   color: black;
   box-sizing: border-box;
@@ -207,17 +219,21 @@ main {
 }
 
 .new {
-  position: relative;
+  position: absolute;
   flex-direction: row;
-  left: 140px;
+  top: 10px;
+  right: 10px;
   display: flex;
   background-color: #99e2d0;
-  bottom: 137px;
-  width: 30%;
   border-radius: 0.25rem;
   padding: 3px;
   justify-content: center;
   color: #43af94;
+}
+
+.full_hrt {
+  color: #d66cdb;
+  transition: background 0.3s ease-in-out;
 }
 
 /******FOOTER********/
@@ -225,6 +241,105 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+/*****couleurs*****/
+/***** police  *****/
+/***** margin  ******/
+footer a {
+  color: white;
+}
+
+.footer_content {
+  background-color: #353535;
+  color: #fff;
+}
+
+.fa-utensils,
+.fa-hands-helping {
+  margin-right: 10px;
+  color: white;
+}
+
+.logoohmyfood_footer {
+  font-family: "Shrikhand", sans-serif;
+  color: white;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+main {
+  background-color: #f6f6f6;
+  border-radius: 1.25rem 1.25rem 0 0;
+}
+
+.logoohmyfood {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-family: "Shrikhand", sans-serif;
+}
+
+.img_resto1,
+.img_resto2,
+.img_resto3,
+.img_resto4 {
+  width: 100%;
+  object-fit: cover;
+}
+
+.enseigne {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border-radius: 1.25rem 1.25rem 0 0;
+  padding: 10px;
+}
+
+h1 {
+  font-family: "Shrikhand", sans-serif;
+  font-size: 25px;
+}
+
+h2 {
+  font-size: 13px;
+  margin: 10px;
+  border-top: none;
+  border-bottom: 3px solid #99e2d0;
+  width: 11%;
+}
+
+footer {
+  background-color: #353535;
+}
+
+.global {
+  box-sizing: border-box;
+  padding: 10px;
+  border-radius: 1.25rem;
+  background: #ffffff;
+  margin-bottom: 10px;
+}
+
+.commander {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 32px;
+  border-radius: 1.25rem;
+  background: linear-gradient(#d66cdb, #a45cdb);
+  border: none;
+  padding: 10px;
+}
+
+.btn_link {
+  display: flex;
+  justify-content: center;
 }
 
 footer a {

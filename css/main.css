@@ -131,11 +131,19 @@ main {
       -ms-flex-pack: center;
           justify-content: center;
   width: 100%;
-  height: 100px;
+  height: 150px;
 }
 
 .presentation_title {
   text-align: center;
+  margin: 0 auto;
+  width: 64%;
+  font-weight: bolder;
+}
+
+.presentation_sub {
+  text-align: center;
+  padding: 5px;
 }
 
 .localisation {
@@ -212,7 +220,8 @@ main {
           flex-direction: column;
 }
 
-.steps {
+.steps1,
+.steps2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -227,6 +236,7 @@ main {
   border-radius: 1.25rem;
   padding: 17px;
   margin-top: 3px;
+  margin-bottom: 10px;
 }
 
 .steps_card {
@@ -237,6 +247,26 @@ main {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  background-color: white;
+}
+
+.steps3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: 0 0 17px #aaaaaa;
+          box-shadow: 0 0 17px #aaaaaa;
+  border-radius: 1.25rem;
+  padding: 17px;
+  margin-top: 3px;
+  margin-bottom: 10px;
+  background-color: #f5edff;
 }
 
 .steps_number {
@@ -264,6 +294,15 @@ main {
   margin-right: 6px;
 }
 
+.fa-store {
+  color: #9356dc;
+}
+
+.fa-mobile-alt,
+.fa-bars {
+  color: #7e7e7e;
+}
+
 /******RESTAURANTS*******/
 .restaurants_img {
   border-radius: 1.25rem 1.25rem 0 0;
@@ -273,8 +312,12 @@ main {
      object-fit: cover;
 }
 
-.restaurants_card {
+.restau1,
+.restau2,
+.restau3,
+.restau4 {
   position: relative;
+  margin-bottom: 10px;
 }
 
 .restau_info {
@@ -307,6 +350,30 @@ main {
   color: #43af94;
 }
 
+.heart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.full_hrt {
+  color: #d66cdb;
+  -webkit-transition: background 0.3s ease-in-out;
+  transition: background 0.3s ease-in-out;
+}
+
+.shape_hrt {
+  position: absolute;
+}
+
+.restaurants {
+  background-color: #f6f6f6;
+  width: 100%;
+}
+
 /******FOOTER********/
 .footer_content {
   display: -webkit-box;
@@ -319,6 +386,33 @@ main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 10px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+.logoohmyfood {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: "Shrikhand", sans-serif;
+}
+
+.img_resto3 {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 footer a {
