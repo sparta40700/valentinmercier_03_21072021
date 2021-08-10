@@ -145,6 +145,7 @@ main {
 .presentation_sub {
   text-align: center;
   padding: 5px;
+  color: grey;
 }
 
 .localisation {
@@ -353,23 +354,99 @@ main {
   color: #43af94;
 }
 
-.heart {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+.fa-heart {
+  position: absolute;
+  right: 16px;
+  bottom: 10px;
+  font-size: 20px;
+  -webkit-text-stroke: 1px white;
 }
 
-.full_hrt {
-  color: #d66cdb;
-  -webkit-transition: background 0.3s ease-in-out;
-  transition: background 0.3s ease-in-out;
+.full_hrt:hover {
+  background: -webkit-gradient(linear, left top, left bottom, from(#9356dc), to(#ff79da));
+  background: linear-gradient(#9356dc, #ff79da);
+  background-clip: text;
+  -webkit-fill-color: transparent;
 }
 
 .shape_hrt {
-  position: absolute;
+  opacity: 0;
+  -webkit-transition: background 0.3s;
+  transition: background 0.3s;
+}
+
+.shape_hrt:hover {
+  opacity: 1;
+  background: -webkit-gradient(linear, left top, left bottom, from(#9356dc), to(#ff79da));
+  background: linear-gradient(#9356dc, #ff79da);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@-webkit-keyframes slide-heart {
+  0% {
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+    opacity: 0;
+  }
+  20% {
+    -webkit-transform: translateZ(32px);
+            transform: translateZ(32px);
+    opacity: 0.2;
+  }
+  40% {
+    -webkit-transform: translateZ(64px);
+            transform: translateZ(64px);
+    opacity: 0.4;
+  }
+  60% {
+    -webkit-transform: translateZ(96px);
+            transform: translateZ(96px);
+    opacity: 0.6;
+  }
+  80% {
+    -webkit-transform: translateZ(128px);
+            transform: translateZ(128px);
+    opacity: 0.8;
+  }
+  100% {
+    -webkit-transform: translateZ(160px);
+            transform: translateZ(160px);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-heart {
+  0% {
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+    opacity: 0;
+  }
+  20% {
+    -webkit-transform: translateZ(32px);
+            transform: translateZ(32px);
+    opacity: 0.2;
+  }
+  40% {
+    -webkit-transform: translateZ(64px);
+            transform: translateZ(64px);
+    opacity: 0.4;
+  }
+  60% {
+    -webkit-transform: translateZ(96px);
+            transform: translateZ(96px);
+    opacity: 0.6;
+  }
+  80% {
+    -webkit-transform: translateZ(128px);
+            transform: translateZ(128px);
+    opacity: 0.8;
+  }
+  100% {
+    -webkit-transform: translateZ(160px);
+            transform: translateZ(160px);
+    opacity: 1;
+  }
 }
 
 .restaurants {
@@ -424,6 +501,18 @@ footer a {
 main {
   background-color: #f6f6f6;
   border-radius: 1.25rem 1.25rem 0 0;
+  position: relative;
+  margin-top: -25px;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
 .logoohmyfood {
@@ -434,6 +523,8 @@ main {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  margin-left: 37%;
+  font-size: 35px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -445,11 +536,13 @@ main {
 .img_resto3,
 .img_resto4 {
   width: 100%;
+  height: 150px;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
 .enseigne {
+  position: relative;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   display: -webkit-box;
@@ -516,6 +609,68 @@ footer {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.fa-heart {
+  position: absolute;
+  right: 16px;
+  bottom: 10px;
+  font-size: 20px;
+  -webkit-text-stroke: 1px white;
+}
+
+.full_hrt:hover {
+  background: -webkit-gradient(linear, left top, left bottom, from(#9356dc), to(#ff79da));
+  background: linear-gradient(#9356dc, #ff79da);
+  -webkit-background-clip: text;
+  -webkit-fill-color: transparent;
+}
+
+.shape_hrt {
+  opacity: 0;
+  -webkit-transition: background 0.3s;
+  transition: background 0.3s;
+}
+
+.shape_hrt:hover {
+  opacity: 1;
+  background: -webkit-gradient(linear, left top, left bottom, from(#9356dc), to(#ff79da));
+  background: linear-gradient(#9356dc, #ff79da);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@keyframes slide-heart {
+  0% {
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+    opacity: 0;
+  }
+  20% {
+    -webkit-transform: translateZ(32px);
+            transform: translateZ(32px);
+    opacity: 0.2;
+  }
+  40% {
+    -webkit-transform: translateZ(64px);
+            transform: translateZ(64px);
+    opacity: 0.4;
+  }
+  60% {
+    -webkit-transform: translateZ(96px);
+            transform: translateZ(96px);
+    opacity: 0.6;
+  }
+  80% {
+    -webkit-transform: translateZ(128px);
+            transform: translateZ(128px);
+    opacity: 0.8;
+  }
+  100% {
+    -webkit-transform: translateZ(160px);
+            transform: translateZ(160px);
+    opacity: 1;
+  }
 }
 
 footer a {

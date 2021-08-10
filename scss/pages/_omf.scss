@@ -38,6 +38,7 @@ main {
 .presentation_sub {
   text-align: center;
   padding: 5px;
+  color: grey;
 }
 .localisation {
   display: flex;
@@ -164,18 +165,55 @@ main {
   justify-content: center;
   color: #43af94;
 }
-.heart {
-  display: flex;
-  justify-content: flex-end;
+.fa-heart {
+  position: absolute;
+  right: 16px;
+  bottom: 10px;
+  font-size: 20px;
+  -webkit-text-stroke: 1px white;
 }
-
-.full_hrt {
-  color: #d66cdb;
-  transition: background 0.3s ease-in-out;
+.full_hrt:hover {
+  background: linear-gradient($color-primary, $color-secondary);
+  background-clip: text;
+  -webkit-fill-color: transparent;
 }
 .shape_hrt {
-  position: absolute;
+  opacity: 0;
+  transition: background 0.3s;
+  &:hover {
+    opacity: 1;
+    background: linear-gradient($color-primary, $color-secondary);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
 }
+@keyframes slide-heart {
+  0% {
+    transform: translateZ(0);
+    opacity: 0;
+  }
+  20% {
+    transform: translateZ(32px);
+    opacity: 0.2;
+  }
+  40% {
+    transform: translateZ(64px);
+    opacity: 0.4;
+  }
+  60% {
+    transform: translateZ(96px);
+    opacity: 0.6;
+  }
+  80% {
+    transform: translateZ(128px);
+    opacity: 0.8;
+  }
+  100% {
+    transform: translateZ(160px);
+    opacity: 1;
+  }
+}
+
 .restaurants {
   background-color: #f6f6f6;
   width: 100%;
