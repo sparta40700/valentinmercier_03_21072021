@@ -85,7 +85,7 @@ footer {
 }
 .full_hrt:hover {
   background: linear-gradient($color-primary, $color-secondary);
-  -webkit-background-clip: text;
+  -background-clip: text;
   -webkit-fill-color: transparent;
 }
 .shape_hrt {
