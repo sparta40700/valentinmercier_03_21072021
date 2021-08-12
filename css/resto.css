@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*****couleurs*****/
 /***** police  *****/
 /***** margin  ******/
@@ -42,6 +43,10 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+}
+
+li {
+  list-style-type: none;
 }
 
 .logoohmyfood {
@@ -102,7 +107,8 @@ footer {
   background-color: #353535;
 }
 
-.global {
+.entrer1 {
+  position: relative;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 10px;
@@ -150,7 +156,7 @@ footer {
 .full_hrt:hover {
   background: -webkit-gradient(linear, left top, left bottom, from(#9356dc), to(#ff79da));
   background: linear-gradient(#9356dc, #ff79da);
-  -background-clip: text;
+  -webkit-background-clip: text;
   -webkit-fill-color: transparent;
 }
 
@@ -232,5 +238,78 @@ footer {
             transform: translateZ(160px);
     opacity: 1;
   }
+}
+
+.btn_checked {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 10px;
+  right: 49px;
+  top: 97px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  width: 30px;
+  height: 30px;
+  background-color: #99e2d0;
+  margin-right: -100px;
+}
+
+.btn_checked:hover {
+  -webkit-animation: slide-in-right 0.5s linear both;
+          animation: slide-in-right 0.5s linear both;
+  -webkit-transform-origin: right 50%;
+          transform-origin: right 50%;
+}
+
+@-webkit-keyframes slide-in-right {
+  0% {
+    -webkit-transform: translateX(-100px);
+            transform: translateX(-100px);
+    -webkit-transform: rotateX(180°);
+            transform: rotateX(180°);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes slide-in-right {
+  0% {
+    -webkit-transform: translateX(-100px);
+            transform: translateX(-100px);
+    -webkit-transform: rotateX(180°);
+            transform: rotateX(180°);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+.price {
+  position: absolute;
+  right: 10px;
+  top: 20px;
+}
+
+.enter_sub {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 /*# sourceMappingURL=resto.css.map */

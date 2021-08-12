@@ -515,6 +515,10 @@ header {
           flex-direction: row;
 }
 
+li {
+  list-style-type: none;
+}
+
 .logoohmyfood {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -523,7 +527,6 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  margin-left: 37%;
   font-size: 35px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -574,7 +577,8 @@ footer {
   background-color: #353535;
 }
 
-.global {
+.entrer1 {
+  position: relative;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 10px;
@@ -622,7 +626,7 @@ footer {
 .full_hrt:hover {
   background: -webkit-gradient(linear, left top, left bottom, from(#9356dc), to(#ff79da));
   background: linear-gradient(#9356dc, #ff79da);
-  -webkit-background-clip: text;
+  -background-clip: text;
   -webkit-fill-color: transparent;
 }
 
@@ -671,6 +675,12 @@ footer {
             transform: translateZ(160px);
     opacity: 1;
   }
+}
+
+.add_to_cart {
+  position: absolute;
+  right: -25px;
+  top: 27px;
 }
 
 footer a {

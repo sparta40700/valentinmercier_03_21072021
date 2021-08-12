@@ -15,6 +15,9 @@ header {
   display: flex;
   flex-direction: row;
 }
+li {
+  list-style-type: none;
+}
 .logoohmyfood {
   display: flex;
   flex-direction: row;
@@ -54,7 +57,8 @@ h2 {
 footer {
   background-color: #353535;
 }
-.global {
+.entrer1 {
+  position: relative;
   box-sizing: border-box;
   padding: 10px;
   border-radius: 1.25rem;
@@ -85,7 +89,7 @@ footer {
 }
 .full_hrt:hover {
   background: linear-gradient($color-primary, $color-secondary);
-  -background-clip: text;
+  -webkit-background-clip: text;
   -webkit-fill-color: transparent;
 }
 .shape_hrt {
@@ -123,4 +127,41 @@ footer {
     transform: translateZ(160px);
     opacity: 1;
   }
+}
+.btn_checked {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  right: 49px;
+  top: 97px;
+  transition: all 0.5s;
+  width: 30px;
+  height: 30px;
+  background-color: $color-tertiary;
+  margin-right: -100px;
+  &:hover {
+    animation: slide-in-right 0.5s linear both;
+    transform-origin: right 50%;
+  }
+}
+@keyframes slide-in-right {
+  0% {
+    transform: translateX(-100px);
+    transform: rotateX(180°);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.price {
+  position: absolute;
+  right: 10px;
+  top: 20px;
+}
+.enter_sub {
+  display: flex;
+  justify-content: space-between;
 }

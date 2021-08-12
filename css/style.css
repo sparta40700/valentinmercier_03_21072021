@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*****couleurs*****/
 /***** police  *****/
 /***** margin  ******/
@@ -368,10 +369,13 @@ header {
   flex-direction: row;
 }
 
+li {
+  list-style-type: none;
+}
+
 .logoohmyfood {
   display: flex;
   flex-direction: row;
-  margin-left: 37%;
   font-size: 35px;
   justify-content: center;
   font-family: "Shrikhand", sans-serif;
@@ -413,7 +417,8 @@ footer {
   background-color: #353535;
 }
 
-.global {
+.entrer1 {
+  position: relative;
   box-sizing: border-box;
   padding: 10px;
   border-radius: 1.25rem;
@@ -488,6 +493,45 @@ footer {
     opacity: 1;
   }
 }
+.btn_checked {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  right: 49px;
+  top: 97px;
+  transition: all 0.5s;
+  width: 30px;
+  height: 30px;
+  background-color: #99e2d0;
+  margin-right: -100px;
+}
+.btn_checked:hover {
+  animation: slide-in-right 0.5s linear both;
+  transform-origin: right 50%;
+}
+
+@keyframes slide-in-right {
+  0% {
+    transform: translateX(-100px);
+    transform: rotateX(180°);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+.price {
+  position: absolute;
+  right: 10px;
+  top: 20px;
+}
+
+.enter_sub {
+  display: flex;
+  justify-content: space-between;
+}
+
 footer a {
   color: white;
 }
