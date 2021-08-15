@@ -87,6 +87,7 @@ header {
 .logoohmyfood {
   font-family: "Shrikhand", sans-serif;
   font-size: 30px;
+  height: 55px;
 }
 
 .destination {
@@ -494,27 +495,31 @@ footer {
   }
 }
 .btn_checked {
+  font-size: 1.3rem;
+  position: absolute;
+  top: 0;
   display: flex;
-  flex-direction: row;
   align-items: center;
   justify-content: center;
-  padding: 10px;
-  right: 49px;
-  top: 97px;
-  transition: all 0.5s;
-  width: 30px;
-  height: 30px;
-  background-color: #99e2d0;
-  margin-right: -100px;
+  width: 100%;
+  height: 100%;
+  transition-duration: 400ms;
+  transform: rotate(360deg);
+  color: #ffffff;
+  opacity: 0;
 }
 .btn_checked:hover {
-  animation: slide-in-right 0.5s linear both;
-  transform-origin: right 50%;
+  opacity: 1;
+  animation: slide-in-left 0.5s linear both;
+  transform-origin: left 50%;
+  width: 60px;
+  height: 100%;
+  background: #99e2d0;
 }
 
 @keyframes slide-in-right {
   0% {
-    transform: translateX(-100px);
+    transform: translateX(-50px);
     transform: rotateX(180°);
   }
   100% {
