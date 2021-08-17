@@ -680,60 +680,67 @@ footer {
 }
 
 .btn_checked {
+  font-size: 1.3rem;
+  position: absolute;
+  top: 0;
+  right: 0px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 10px;
-  right: 49px;
-  top: 97px;
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
-  width: 30px;
-  height: 30px;
-  background-color: #99e2d0;
-  margin-right: -100px;
+  width: 100%;
+  height: 100%;
+  -webkit-transition-duration: 400ms;
+          transition-duration: 400ms;
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+  color: #ffffff;
+  opacity: 0;
 }
 
 .btn_checked:hover {
+  opacity: 1;
   -webkit-animation: slide-in-right 0.5s linear both;
           animation: slide-in-right 0.5s linear both;
-  -webkit-transform-origin: right 50%;
-          transform-origin: right 50%;
+  -webkit-transform-origin: left 50%;
+          transform-origin: left 50%;
+  width: 60px;
+  height: 100%;
+  background: #99e2d0;
 }
 
 @-webkit-keyframes slide-in-right {
   0% {
-    -webkit-transform: translateX(-100px);
-            transform: translateX(-100px);
+    margin-right: -10px;
+    -webkit-transform: translateX(100px);
+            transform: translateX(100px);
     -webkit-transform: rotateX(180°);
             transform: rotateX(180°);
   }
   100% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
+    margin-right: 0px;
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
   }
 }
 
 @keyframes slide-in-right {
   0% {
-    -webkit-transform: translateX(-100px);
-            transform: translateX(-100px);
+    margin-right: -10px;
+    -webkit-transform: translateX(100px);
+            transform: translateX(100px);
     -webkit-transform: rotateX(180°);
             transform: rotateX(180°);
   }
   100% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
+    margin-right: 0px;
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
   }
 }
 
@@ -741,6 +748,7 @@ footer {
   position: absolute;
   right: 10px;
   top: 20px;
+  text-overflow: ellipsis;
 }
 
 .enter_sub {
