@@ -2,11 +2,11 @@
 <html lang="fr">
   <head>
     <meta charset="utf-8" />
-    <title>A la française</title>
+    <title>La palette du goût</title>
     <meta name="description" content="Réservez vos menus à Paris !" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta property="title" content="ohmyfood - réservez votre menu en ligne" />
-    <link rel="icon" href="./Maquettes Ohmyfood/images/logo/ohmyfood@2x.svg" />
+    <link rel="icon" href="/Maquettes_Ohmyfood/images/logo/ohmyfood@2x.svg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="stylesheet" href="./css/resto.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -14,6 +14,10 @@
       href="https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap"
       rel="stylesheet"
     />
+    <script
+      src="https://kit.fontawesome.com/5ef04f5a87.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
 
   <body>
@@ -22,167 +26,127 @@
       <span class="logoohmyfood">ohmyfood</span>
     </header>
 
-    <p>
+    <div id="container_img">
       <img
-        class="img_resto3"
+        class="img_resto1"
         src="Maquettes_Ohmyfood/images/restaurants/toa.jpg"
         alt="assiete dans restaurant"
       />
-    </p>
+    </div>
 
     <main>
       <div class="enseigne">
         <h1>À la française</h1>
-        <div class="coeurs">
-          <i class="fas fa-heart home_heart full_hrt"></i>
-          <i class="far fa-heart home_heart shape_hrt"></i>
+        <div class="heart">
+          <i class="far fa-heart home_heart full_hrt"></i>
+          <i class="fas fa-heart home_heart shape_hrt"></i>
         </div>
       </div>
-
-      <div class="carte">
-        <div class="entrees">
-          <h2>ENTRÉES</h2>
-          <div class="menu">
-            <div class="global global--1">
-              <div class="dish_card">
-                <div class="details">
-                  <h3>Tartare de poulpe acidulé</h3>
-                  <div class="ingredients_price">
-                    <p>Aux zestes d'orange</p>
-                  </div>
-                </div>
-                <span>25€</span>
-              </div>
-              <div class="global__check">
-                <i class="fas fa-check-circle add_to_cart"></i>
-              </div>
+      <div class="menu_cards">
+        <div class="enter_list">
+          <h2>ENTREES</h2>
+          <div class="entrer1">
+            <div class="enter_sub">
+              <h4>Tartare de poulpe acidulé</h4>
+              <p class="enter_subtile">Aux zestes d'orange</p>
             </div>
-            <div class="global global--2">
-              <div class="dish_card">
-                <div class="details">
-                  <h3>Velouté de légumes d'antan</h3>
-                  <div class="ingredients_price">
-                    <p>Carotte, panais, topinambour</p>
-                  </div>
-                </div>
-                <span>35€</span>
-              </div>
-              <div class="global__check">
-                <i class="fas fa-check-circle add_to_cart"></i>
-              </div>
-            </div>
-            <div class="global global--3">
-              <div class="dish_card">
-                <div class="details">
-                  <h3>Soupe à l'oignon</h3>
-                  <div class="ingredients_price">
-                    <p>Revisitée</p>
-                  </div>
-                </div>
-                <span>20€</span>
-              </div>
-              <div class="global__check">
-                <i class="fas fa-check-circle add_to_cart"></i>
-              </div>
+            <span>25€</span>
+            <div class="btn_checked">
+              <i class="fas fa-check-circle add_to_cart"></i>
             </div>
           </div>
         </div>
-        <div class="plats">
-          <h2>PLATS</h2>
-          <div class="menu">
-            <div class="global global--1">
-              <div class="dish_card">
-                <div class="details">
-                  <h3>Coquilles Saint-Jacques</h3>
-                  <div class="ingredients_price">
-                    <p>Accompagnés d'une purée de panais</p>
-                  </div>
-                </div>
-                <span>40€</span>
-              </div>
-              <div class="global__check">
-                <i class="fas fa-check-circle add_to_cart"></i>
-              </div>
-            </div>
-            <div class="global global--2">
-              <div class="dish_card">
-                <div class="details">
-                  <h3>Magret de canard</h3>
-                  <div class="ingredients_price">
-                    <p>Et parmentier de pommes de terre</p>
-                  </div>
-                </div>
-                <span>35€</span>
-              </div>
-              <div class="global__check">
-                <i class="fas fa-check-circle add_to_cart"></i>
-              </div>
-            </div>
-            <div class="global global--3">
-              <div class="dish_card">
-                <div class="details">
-                  <h3>Pigeonneau d’Ille-et-Vilaine</h3>
-                  <div class="ingredients_price">
-                    <p>Sur son lit de gnocchis aux légumes</p>
-                  </div>
-                </div>
-                <span>44€</span>
-              </div>
-              <div class="global__check">
-                <i class="fas fa-check-circle add_to_cart"></i>
-              </div>
-            </div>
+        <div class="entrer1">
+          <div class="enter_sub">
+            <h4>Velouté de légumes d'antan</h4>
+            <div class="enter_subtile">Carotte, panais, topinambour</div>
           </div>
-        </div>
-        <div class="desserts">
-          <h2>DESSERTS</h2>
-          <div class="menu">
-            <div class="global global--1">
-              <div class="dish_card">
-                <div class="details">
-                  <h3>Pétales de violettes glacés</h3>
-                  <div class="ingredients_price">
-                    <p>Et purée de noisettes</p>
-                  </div>
-                </div>
-                <span>18€</span>
-              </div>
-              <div class="global__check">
-                <i class="fas fa-check-circle add_to_cart"></i>
-              </div>
-            </div>
-            <div class="global global--2">
-              <div class="dish_card">
-                <div class="details">
-                  <h3>Fondant au chocolat</h3>
-                  <div class="ingredients_price">
-                    <p>Revisité</p>
-                  </div>
-                </div>
-                <span>22€</span>
-              </div>
-              <div class="global__check">
-                <i class="fas fa-check-circle add_to_cart"></i>
-              </div>
-            </div>
-            <div class="global global--3">
-              <div class="dish_card">
-                <div class="details">
-                  <h3>Millefeuille croustillant</h3>
-                  <div class="ingredients_price">
-                    <p>Myrtilles et pâte d’amande</p>
-                  </div>
-                </div>
-                <span>23€</span>
-              </div>
-              <div class="global__check">
-                <i class="fas fa-check-circle add_to_cart"></i>
-              </div>
-            </div>
+          <span>35€</span>
+          <div class="btn_checked">
+            <i class="fas fa-check-circle add_to_cart"></i>
           </div>
         </div>
       </div>
+      <div class="entrer1">
+        <div class="enter_sub">
+          <h4>Soupe à l'oignon</h4>
+          <div class="enter_subtile">Revisitée</div>
+        </div>
+        <span>20€</span>
+        <div class="btn_checked">
+          <i class="fas fa-check-circle add_to_cart"></i>
+        </div>
+      </div>
 
+      <div class="middle_list">
+        <h2>PLATS</h2>
+        <div class="entrer1">
+          <div class="enter_sub">
+            <h4>Coquilles Saint-Jacques</h4>
+            <div class="enter_subtile">Accompagnés d'une purée de panais</div>
+          </div>
+          <span>40€</span>
+          <div class="btn_checked">
+            <i class="fas fa-check-circle add_to_cart"></i>
+          </div>
+        </div>
+      </div>
+      <div class="entrer1">
+        <div class="enter_sub">
+          <h4>Magret de canard</h4>
+          <div class="enter_subtile">Et parmentier de pommes de terre</div>
+        </div>
+        <span>35€</span>
+        <div class="btn_checked">
+          <i class="fas fa-check-circle add_to_cart"></i>
+        </div>
+      </div>
+
+      <div class="entrer1">
+        <div class="enter_sub">
+          <h4>Pigeonneau d’Ille-et-Vilaine</h4>
+          <div class="enter_subtile">Sur son lit de gnocchis aux légumes</div>
+        </div>
+        <span>44€</span>
+        <div class="btn_checked">
+          <i class="fas fa-check-circle add_to_cart"></i>
+        </div>
+      </div>
+
+      <div class="dessert_list">
+        <h2>DESSERTS</h2>
+        <div class="entrer1">
+          <div class="enter_sub">
+            <h4>Pétales de violettes glacés</h4>
+            <div class="enter_subtile">Et purée de noisettes</div>
+          </div>
+          <span>18€</span>
+          <div class="btn_checked">
+            <i class="fas fa-check-circle add_to_cart"></i>
+          </div>
+        </div>
+      </div>
+      <div class="entrer1">
+        <div class="enter_sub">
+          <h4>Fondant au chocolat</h4>
+          <div class="enter_subtile">Revisité</div>
+        </div>
+        <span>22€</span>
+        <div class="btn_checked">
+          <i class="fas fa-check-circle add_to_cart"></i>
+        </div>
+      </div>
+
+      <div class="entrer1">
+        <div class="enter_sub">
+          <h4>Millefeuille croustillant</h4>
+          <div class="enter_subtile">Myrtilles et pâte d’amande</div>
+        </div>
+        <span>23€</span>
+        <div class="btn_checked">
+          <i class="fas fa-check-circle add_to_cart"></i>
+        </div>
+      </div>
       <div class="btn_link">
         <button class="commander"><span>Commander</span></button>
       </div>
