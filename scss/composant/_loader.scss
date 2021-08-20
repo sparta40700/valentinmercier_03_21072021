@@ -1,9 +1,9 @@
 $component-dimension: 180px;
 $timing: 3s;
 $color-shadow: lightgray;
-$pan-color-light: #3949AB;
-$pan-color-dark: #5C6BC0;
-$loader-color: #FDD835;
+$pan-color-light: #3949ab;
+$pan-color-dark: #5c6bc0;
+$loader-color: #fdd835;
 
 body {
   position: relative;
@@ -76,18 +76,19 @@ body {
 }
 
 .pan-loader {
-    z-index: 10;
-    position: fixed;
-    top: 20%;
-    left: 50%;
+  z-index: 10;
+  position: absolute;
+  //top: 20%;
+  //left: 50%;
   width: $component-dimension;
   height: $component-dimension;
   margin: 100px auto;
   .loader {
     position: relative;
-    top: 10%;
-    left: 0;
+    //top: 10%;
+    //left: 0;
     z-index: -1;
+    justify-content: center;
     width: 60%;
     height: 45%;
     border: 10px solid transparent;
@@ -97,7 +98,7 @@ body {
     animation-timing-function: linear;
   }
   .pan-container {
-    display:flex;
+    display: flex;
     width: 100%;
     animation: pan $timing infinite;
   }
@@ -117,7 +118,7 @@ body {
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
   }
-  
+
   .shadow {
     position: relative;
     top: 15%;
