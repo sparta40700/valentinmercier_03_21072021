@@ -1,21 +1,7 @@
-/*****BREAKPOINT*****/
-$breakpoints: (
-  tablet: 768px,
-  laptop: 1024px,
-  desktop: 1280px,
-);
-@mixin desktop {
-  @media screen and (min-width: map-get($breakpoint,desktop)) {
-    @content;
-  }
-}
-@mixin laptop {
-  @media screen and (min-width: map-get($breakpoint,laptop)) {
-    @content;
-  }
-}
-@mixin tablet {
-  @media screen and (min-width: map-get($breakpoint,tablet)) {
+/*****mixins*****/
+
+@mixin media($size) {
+  @media (min-width: $size) {
     @content;
   }
 }

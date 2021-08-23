@@ -172,9 +172,9 @@ footer {
 .entrer1 {
   display: flex;
   flex-direction: row;
-  text-overflow: hidden;
   margin: 10px;
-  &:hover {
+  &:hover,
+  :active {
     span {
       margin-left: 20px;
     }
@@ -200,5 +200,8 @@ footer {
 .enter_sub {
   display: flex;
   flex-direction: column;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
   //justify-content: space-between;
 }

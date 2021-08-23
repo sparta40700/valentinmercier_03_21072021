@@ -1,0 +1,7 @@
+@media screen and (min-width: 1200px) {
+  .restaurant {
+    -webkit-column-count: 2;
+            column-count: 2;
+  }
+}
+/*# sourceMappingURL=responsive.css.map */

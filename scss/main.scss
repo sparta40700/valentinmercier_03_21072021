@@ -1,4 +1,7 @@
 @import "./base/_reset";
+@import "./utils/breakpoint";
+@import "./utils/variable";
+@import "./utils/animations";
 @import "./layout/_header";
 @import "./Pages/_omf";
 @import "./pages/resto.scss";

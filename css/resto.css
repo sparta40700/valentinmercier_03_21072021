@@ -1,6 +1,7 @@
 /*****couleurs*****/
 /***** police  *****/
 /***** margin  ******/
+/*****LOADER****/
 footer a {
   color: white;
 }
@@ -310,15 +311,16 @@ footer {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  text-overflow: hidden;
   margin: 10px;
 }
 
-.entrer1:hover span {
+.entrer1:hover span,
+.entrer1 :active span {
   margin-left: 20px;
 }
 
-.entrer1:hover .btn_checked {
+.entrer1:hover .btn_checked,
+.entrer1 :active .btn_checked {
   opacity: 1;
   -webkit-animation: slide-in-left 0.5s linear both;
           animation: slide-in-left 0.5s linear both;
@@ -330,7 +332,8 @@ footer {
   border-radius: 0 1.25rem 1.25rem 0;
 }
 
-.entrer1:hover .btn_checked .add_to_cart {
+.entrer1:hover .btn_checked .add_to_cart,
+.entrer1 :active .btn_checked .add_to_cart {
   -webkit-transform: rotate(360deg);
           transform: rotate(360deg);
   -webkit-transition-duration: 1s;
@@ -351,5 +354,8 @@ footer {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 /*# sourceMappingURL=resto.css.map */

@@ -1,9 +1,11 @@
 {
-	"folders": [
-		{
-			"name": "ohmyfood",
-			"path": "."
-		}
-	],
-	"settings": {}
+  "folders": [
+    {
+      "name": "ohmyfood",
+      "path": "."
+    }
+  ],
+  "settings": {
+    "git.ignoreLimitWarning": true
+  }
 }
