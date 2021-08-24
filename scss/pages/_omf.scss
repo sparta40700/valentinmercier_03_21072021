@@ -89,11 +89,14 @@ main {
   margin-top: 3px;
   margin-bottom: 10px;
 }
-.steps_card {
+.steps_cards {
   display: flex;
   flex-direction: column;
-  background-color: white;
-  //align-items: center;
+  @include media(991px) {
+    flex-direction: row;
+    width: 50%;
+    justify-content: space-between;
+  }
 }
 .steps3 {
   display: flex;
@@ -214,13 +217,16 @@ main {
     opacity: 1;
   }
 }
+.restaurants_title {
+  font-size: 1.3rem;
+  font-weight: bolder;
+}
 
 .restaurants {
   background-color: #f6f6f6;
   width: 100%;
-  @include media(1200px) {
+  @include media(600px) {
     column-count: 2;
-    justify-content: stretch;
   }
 }
 /******FOOTER********/
