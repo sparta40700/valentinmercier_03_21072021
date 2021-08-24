@@ -312,6 +312,9 @@ footer {
       -ms-flex-direction: row;
           flex-direction: row;
   margin: 10px;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 
 .entrer1:hover span,
@@ -354,6 +357,12 @@ footer {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.enter_subtile {
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;

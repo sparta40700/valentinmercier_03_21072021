@@ -214,10 +214,16 @@ main {
   margin-bottom: 10px;
 }
 
-.steps_card {
+.steps_cards {
   display: flex;
   flex-direction: column;
-  background-color: white;
+}
+@media (min-width: 991px) {
+  .steps_cards {
+    flex-direction: row;
+    width: 50%;
+    justify-content: space-between;
+  }
 }
 
 .steps3 {
@@ -349,14 +355,18 @@ main {
     opacity: 1;
   }
 }
+.restaurants_title {
+  font-size: 1.3rem;
+  font-weight: bolder;
+}
+
 .restaurants {
   background-color: #f6f6f6;
   width: 100%;
 }
-@media (min-width: 1200px) {
+@media (min-width: 600px) {
   .restaurants {
     column-count: 2;
-    justify-content: stretch;
   }
 }
 
@@ -453,8 +463,8 @@ body {
 .pan-loader {
   z-index: 10;
   position: absolute;
-  width: 180px;
-  height: 180px;
+  width: 25%;
+  height: 25%;
   margin: 100px auto;
 }
 .pan-loader .loader {
@@ -710,6 +720,7 @@ footer {
   display: flex;
   flex-direction: row;
   margin: 10px;
+  align-items: flex-end;
 }
 .entrer1:hover span,
 .entrer1 :active span {
@@ -738,6 +749,12 @@ footer {
 .enter_sub {
   display: flex;
   flex-direction: column;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.enter_subtile {
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;

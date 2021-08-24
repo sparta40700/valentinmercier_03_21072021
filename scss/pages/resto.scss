@@ -173,6 +173,7 @@ footer {
   display: flex;
   flex-direction: row;
   margin: 10px;
+  align-items: flex-end;
   &:hover,
   :active {
     span {
@@ -204,4 +205,9 @@ footer {
   white-space: nowrap;
   overflow: hidden;
   //justify-content: space-between;
+}
+.enter_subtile {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
