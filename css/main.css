@@ -564,35 +564,6 @@ main {
 }
 
 /****LOADER*****/
-@-webkit-keyframes pan-loader {
-  0% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-    display: none;
-    -webkit-animation-fill-mode: none;
-            animation-fill-mode: none;
-  }
-}
-@keyframes pan-loader {
-  0% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-    display: none;
-    -webkit-animation-fill-mode: none;
-            animation-fill-mode: none;
-  }
-}
-
 @-webkit-keyframes loader {
   0% {
     -webkit-transform: rotate(0deg);
@@ -611,7 +582,6 @@ main {
             transform: rotate(360deg);
   }
 }
-
 @keyframes loader {
   0% {
     -webkit-transform: rotate(0deg);
@@ -669,47 +639,39 @@ main {
   }
 }
 
-@-webkit-keyframes body {
+.preload {
+  background-color: white;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 999;
+  -webkit-animation: preload 900s forwards 3s;
+          animation: preload 900s forwards 3s;
+}
+
+@-webkit-keyframes preload {
   0% {
-    opacity: 0.1;
-  }
-  100% {
     opacity: 1;
   }
+  100% {
+    opacity: 0;
+    z-index: -99999;
+  }
 }
 
-@keyframes body {
+@keyframes preload {
   0% {
-    opacity: 0.1;
-  }
-  100% {
     opacity: 1;
   }
-}
-
-@-webkit-keyframes shadow {
-  0% {
-    width: 30%;
-  }
-  50% {
-    width: 40%;
-    left: 20px;
-  }
   100% {
-    width: 30%;
-  }
-}
-
-@keyframes shadow {
-  0% {
-    width: 30%;
-  }
-  50% {
-    width: 40%;
-    left: 20px;
-  }
-  100% {
-    width: 30%;
+    opacity: 0;
+    z-index: -99999;
   }
 }
 
@@ -730,10 +692,6 @@ main {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-animation: loader 3s, pan-loader 5s;
-          animation: loader 3s, pan-loader 5s;
-  -webkit-animation-fill-mode: none;
-          animation-fill-mode: none;
   width: 25%;
   height: 25%;
   margin-top: 20%;
@@ -752,8 +710,8 @@ main {
   border: 10px solid transparent;
   border-bottom: 10px solid #fdd835;
   border-radius: 50%;
-  -webkit-animation: loader 3s, pan-loader 5s;
-          animation: loader 3s, pan-loader 5s;
+  -webkit-animation: loader 3s forwards, pan-loader 5s forwards;
+          animation: loader 3s forwards, pan-loader 5s forwards;
 }
 
 .pan-loader .pan-container {
@@ -761,8 +719,8 @@ main {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  -webkit-animation: pan 3s, pan-loader 5s;
-          animation: pan 3s, pan-loader 5s;
+  -webkit-animation: pan 3s forwards, pan-loader 5s forwards;
+          animation: pan 3s forwards, pan-loader 5s forwards;
 }
 
 .pan-loader .pan {
@@ -783,20 +741,6 @@ main {
   border-top-left-radius: 10px;
   border-bottom-right-radius: 10px;
   border-bottom-left-radius: 10px;
-}
-
-.pan-loader .shadow {
-  position: relative;
-  top: 15%;
-  left: 15%;
-  width: 30%;
-  height: 8px;
-  background: lightgray;
-  -webkit-box-shadow: 5px 0 8px 4px lightgray;
-          box-shadow: 5px 0 8px 4px lightgray;
-  border-radius: 20px;
-  -webkit-animation: shadow 3s, pan-loader 5s;
-          animation: shadow 3s, pan-loader 5s;
 }
 
 /*****couleurs*****/
