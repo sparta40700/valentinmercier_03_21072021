@@ -1,0 +1,348 @@
+* {
+  text-decoration: none;
+}
+body {
+  position: relative;
+}
+/*****HEADER*****/
+.logoohmyfood {
+  font-family: $cd-police1;
+  font-size: 30px;
+  height: 55px;
+}
+.destination {
+  text-align: center;
+  border: none !important;
+}
+/*****PRESENTATION*****/
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.presentationglobal {
+  background-color: #f6f6f6;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  box-sizing: border-box;
+  justify-content: center;
+  width: 100%;
+  height: 150px;
+  //box-shadow: 0 0 17px red;
+}
+.presentation_title {
+  text-align: center;
+  font-family: $cd-police;
+  margin: 0 auto;
+  width: 64%;
+  font-weight: bolder;
+}
+.presentation_sub {
+  text-align: center;
+  padding: 5px;
+  color: grey;
+}
+.localisation {
+  display: flex;
+  max-width: 100%;
+  align-items: center;
+  box-sizing: border-box;
+  justify-content: center;
+  height: 32px;
+  box-sizing: border-box;
+  width: 100%;
+  background-color: #eaeaead0;
+}
+.btn {
+  display: flex;
+  justify-content: center;
+  &_action {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+    height: 32px;
+    border-radius: 1.25rem;
+    background: linear-gradient(#d66cdb, #a45cdb);
+    border: none;
+  }
+}
+/*****FONCTIONNEMENT****/
+.fonctionnement {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.menuglobal {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.steps1,
+.steps2 {
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+  box-shadow: 0 0 17px rgb(170, 170, 170);
+  border-radius: 1.25rem;
+  padding: 17px;
+  margin-top: 3px;
+  margin-bottom: 10px;
+}
+.steps_cards {
+  display: flex;
+  flex-direction: column;
+  @include media(991px) {
+    flex-direction: row;
+    width: 50%;
+    justify-content: space-between;
+  }
+}
+.steps3 {
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+  box-shadow: 0 0 17px rgb(170, 170, 170);
+  border-radius: 1.25rem;
+  padding: 17px;
+  margin-top: 3px;
+  margin-bottom: 10px;
+  background-color: #f5edff;
+}
+.steps_number {
+  display: flex;
+  margin-left: -8px;
+  background-color: #9356dc;
+  border-radius: 1.25rem;
+  width: 20px;
+  height: 20px;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  margin-top: 15px;
+}
+.fa-mobile-alt,
+.fa-bars,
+.fa-store {
+  margin-right: 6px;
+}
+.fa-store {
+  color: #9356dc;
+}
+.fa-mobile-alt,
+.fa-bars {
+  color: #7e7e7e;
+}
+/******RESTAURANTS*******/
+.restaurants_img {
+  border-radius: 1.25rem 1.25rem 0 0;
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.restau1,
+.restau2,
+.restau3,
+.restau4 {
+  position: relative;
+  margin-bottom: 10px;
+}
+.restau_info {
+  color: black;
+  box-sizing: border-box;
+  box-shadow: 0 0 17px rgb(170, 170, 170);
+  border-radius: 0 0 1.25rem 1.25rem;
+  padding: 10px;
+  margin-top: -5px;
+  //position: relative;
+}
+.new {
+  position: absolute;
+  flex-direction: row;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  background-color: #99e2d0;
+  border-radius: 0.25rem;
+  padding: 3px;
+  justify-content: center;
+  color: #43af94;
+}
+.fa-heart {
+  position: absolute;
+  right: 16px;
+  bottom: 10px;
+  font-size: 20px;
+  -webkit-text-stroke: 1px white;
+}
+.full_hrt:hover {
+  background: linear-gradient($color-primary, $color-secondary);
+  background-clip: text;
+  -webkit-fill-color: transparent;
+}
+.shape_hrt {
+  opacity: 0;
+  transition: background 0.3s;
+  &:hover {
+    opacity: 1;
+    background: linear-gradient($color-primary, $color-secondary);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+@keyframes slide-heart {
+  0% {
+    transform: translateZ(0);
+    opacity: 0;
+  }
+  20% {
+    transform: translateZ(32px);
+    opacity: 0.2;
+  }
+  40% {
+    transform: translateZ(64px);
+    opacity: 0.4;
+  }
+  60% {
+    transform: translateZ(96px);
+    opacity: 0.6;
+  }
+  80% {
+    transform: translateZ(128px);
+    opacity: 0.8;
+  }
+  100% {
+    transform: translateZ(160px);
+    opacity: 1;
+  }
+}
+.restaurants_title {
+  font-size: 1.3rem;
+  font-weight: bolder;
+}
+
+.restaurants {
+  background-color: #f6f6f6;
+  width: 100%;
+  @include media(600px) {
+    column-count: 2;
+  }
+}
+/******FOOTER********/
+.footer_content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+/****LOADER*****/
+@keyframes pan-loader {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    z-index: 1;
+  }
+}
+
+@keyframes loader {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(0deg);
+  }
+  70% {
+    transform: rotate(240deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes pan {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(-2deg);
+  }
+  50% {
+    transform: rotate(15deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+.preload {
+  background-color: white;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  animation: preload 3s forwards $timing;
+}
+@keyframes preload {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    z-index: -99999;
+  }
+}
+.pan-loader {
+  position: absolute;
+  left: 50%;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: $component-dimension;
+  height: $component-dimension;
+  margin-top: 20%;
+  transform: translate(-50%, -50%);
+  .loader {
+    position: relative;
+    z-index: -1;
+    justify-content: center;
+    width: 60%;
+    height: 45%;
+    border: 10px solid transparent;
+    border-bottom: 10px solid $loader-color;
+    border-radius: 50%;
+    animation: loader $timing forwards, pan-loader 5s forwards;
+  }
+  .pan-container {
+    display: flex;
+    width: 100%;
+    animation: pan $timing forwards, pan-loader 5s forwards;
+  }
+  .pan {
+    width: 60%;
+    height: 20px;
+    background: linear-gradient($pan-color-light, $pan-color-dark);
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+  }
+  .handle {
+    width: 40%;
+    height: 10px;
+    background: linear-gradient($pan-color-light, $pan-color-dark);
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+}
