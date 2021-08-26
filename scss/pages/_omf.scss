@@ -240,6 +240,18 @@ main {
   padding: 10px;
 }
 /****LOADER*****/
+@keyframes pan-loader {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    z-index: 1;
+  }
+}
 
 @keyframes loader {
   0% {
@@ -278,7 +290,7 @@ main {
   justify-content: center;
   align-items: center;
   z-index: 999;
-  animation: preload 900s forwards $timing;
+  animation: preload 3s forwards $timing;
 }
 @keyframes preload {
   0% {

@@ -564,6 +564,31 @@ main {
 }
 
 /****LOADER*****/
+@-webkit-keyframes pan-loader {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    z-index: 1;
+  }
+}
+@keyframes pan-loader {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    z-index: 1;
+  }
+}
+
 @-webkit-keyframes loader {
   0% {
     -webkit-transform: rotate(0deg);
@@ -582,6 +607,7 @@ main {
             transform: rotate(360deg);
   }
 }
+
 @keyframes loader {
   0% {
     -webkit-transform: rotate(0deg);
@@ -651,8 +677,8 @@ main {
       -ms-flex-align: center;
           align-items: center;
   z-index: 999;
-  -webkit-animation: preload 900s forwards 3s;
-          animation: preload 900s forwards 3s;
+  -webkit-animation: preload 3s forwards 3s;
+          animation: preload 3s forwards 3s;
 }
 
 @-webkit-keyframes preload {
