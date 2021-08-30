@@ -180,10 +180,12 @@ main {
 .btn {
   display: flex;
   justify-content: center;
+  box-sizing: border-box;
 }
 .btn_action {
   display: flex;
   flex-direction: column;
+  box-shadow: 0 0 17px #aaaaaa;
   justify-content: center;
   padding: 10px;
   height: 32px;
@@ -383,6 +385,18 @@ main {
 }
 
 /****LOADER*****/
+@keyframes pan-loader {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    z-index: 1;
+  }
+}
 @keyframes loader {
   0% {
     transform: rotate(0deg);
@@ -419,7 +433,7 @@ main {
   justify-content: center;
   align-items: center;
   z-index: 999;
-  animation: preload 900s forwards 3s;
+  animation: preload 3s forwards 3s;
 }
 
 @keyframes preload {

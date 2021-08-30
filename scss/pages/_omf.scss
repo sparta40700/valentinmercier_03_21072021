@@ -22,6 +22,7 @@ main {
   align-items: center;
 }
 .presentationglobal {
+  z-index: 1;
   background-color: #f6f6f6;
   display: flex;
   flex-wrap: wrap;
@@ -58,9 +59,11 @@ main {
 .btn {
   display: flex;
   justify-content: center;
+  box-sizing: border-box;
   &_action {
     display: flex;
     flex-direction: column;
+    box-shadow: 0 0 17px rgb(170, 170, 170);
     justify-content: center;
     padding: 10px;
     height: 32px;
@@ -69,9 +72,29 @@ main {
     border: none;
   }
 }
+.explore {
+  color: white;
+}
 /*****FONCTIONNEMENT****/
-.fonctionnement {
+.fonction {
+  background: white;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
   margin-top: 20px;
+  @include media(400px) {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    width: 100%;
+    margin: 0 auto;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+}
+.fonctionnement {
+  font-weight: bolder;
+  margin-top: 40px;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -81,8 +104,17 @@ main {
   align-items: center;
   flex-direction: column;
 }
+.steps_card {
+  width: 95%;
+  align-items: center;
+  @include media(991px) {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
 .steps1,
 .steps2 {
+  background-color: #f6f6f6;
   display: flex;
   flex-direction: row;
   box-sizing: border-box;
@@ -91,13 +123,22 @@ main {
   padding: 17px;
   margin-top: 3px;
   margin-bottom: 10px;
+  justify-content: space-evenly;
+}
+.steps3 {
+  justify-content: space-evenly;
 }
 .steps_cards {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  //font-weight: bold;
+  font-family: roboto;
   @include media(991px) {
+    margin-left: 50px;
     flex-direction: row;
-    width: 50%;
+    width: 90%;
+    align-items: center;
     justify-content: space-between;
   }
 }
@@ -137,6 +178,10 @@ main {
   color: #7e7e7e;
 }
 /******RESTAURANTS*******/
+.rest {
+  width: 90%;
+  margin: 0 auto;
+}
 .restaurants_img {
   border-radius: 1.25rem 1.25rem 0 0;
   width: 100%;
