@@ -141,6 +141,7 @@ main {
 }
 
 .presentationglobal {
+  z-index: 1;
   background-color: #f6f6f6;
   display: flex;
   flex-wrap: wrap;
@@ -194,9 +195,33 @@ main {
   border: none;
 }
 
+.explore {
+  color: white;
+}
+
 /*****FONCTIONNEMENT****/
-.fonctionnement {
+.fonction {
+  background: white;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
   margin-top: 20px;
+}
+@media (min-width: 400px) {
+  .fonction {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    width: 100%;
+    margin: 0 auto;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+}
+
+.fonctionnement {
+  font-weight: bolder;
+  margin-top: 40px;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -208,8 +233,20 @@ main {
   flex-direction: column;
 }
 
+.steps_card {
+  width: 95%;
+  align-items: center;
+}
+@media (min-width: 991px) {
+  .steps_card {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+
 .steps1,
 .steps2 {
+  background-color: #f6f6f6;
   display: flex;
   flex-direction: row;
   box-sizing: border-box;
@@ -218,16 +255,25 @@ main {
   padding: 17px;
   margin-top: 3px;
   margin-bottom: 10px;
+  justify-content: space-evenly;
+}
+
+.steps3 {
+  justify-content: space-evenly;
 }
 
 .steps_cards {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  font-family: roboto;
 }
 @media (min-width: 991px) {
   .steps_cards {
+    margin-left: 50px;
     flex-direction: row;
-    width: 50%;
+    width: 90%;
+    align-items: center;
     justify-content: space-between;
   }
 }
@@ -273,6 +319,11 @@ main {
 }
 
 /******RESTAURANTS*******/
+.rest {
+  width: 90%;
+  margin: 0 auto;
+}
+
 .restaurants_img {
   border-radius: 1.25rem 1.25rem 0 0;
   width: 100%;
@@ -453,8 +504,8 @@ main {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 25%;
-  height: 25%;
+  width: 250px;
+  height: 250px;
   margin-top: 20%;
   transform: translate(-50%, -50%);
 }
@@ -462,7 +513,7 @@ main {
   position: relative;
   z-index: -1;
   justify-content: center;
-  width: 60%;
+  width: 50%;
   height: 45%;
   border: 10px solid transparent;
   border-bottom: 10px solid #fdd835;
@@ -502,6 +553,15 @@ footer a {
 .footer_content {
   background-color: #353535;
   color: #fff;
+  padding: 15px;
+}
+.footer_content ul {
+  font-family: "Roboto";
+  font-weight: bold;
+  margin-top: 20px;
+}
+.footer_content ul li {
+  margin-bottom: 5px;
 }
 
 .fa-utensils,
@@ -512,6 +572,7 @@ footer a {
 
 .logoohmyfood_footer {
   font-family: "Shrikhand", sans-serif;
+  margin-bottom: 25px;
   color: white;
 }
 
@@ -586,13 +647,10 @@ h2 {
   width: 11%;
 }
 
-footer {
-  background-color: #353535;
-}
-
 .entrer1 {
   position: relative;
   box-sizing: border-box;
+  box-shadow: 0 0 17px #aaaaaa;
   padding: 10px;
   border-radius: 1.25rem;
   background: #ffffff;
@@ -608,11 +666,17 @@ footer {
   background: linear-gradient(#d66cdb, #a45cdb);
   border: none;
   padding: 10px;
+  margin-top: 40px;
+  margin-bottom: 60px;
 }
 
 .btn_link {
   display: flex;
   justify-content: center;
+  background: #f6f6f6;
+}
+.btn_link .commander span {
+  color: white;
 }
 
 .fa-heart {
@@ -626,6 +690,7 @@ footer {
 .full_hrt:hover {
   background: linear-gradient(#9356dc, #ff79da);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-fill-color: transparent;
 }
 
@@ -637,6 +702,7 @@ footer {
   opacity: 1;
   background: linear-gradient(#9356dc, #ff79da);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
@@ -695,6 +761,12 @@ footer {
   text-overflow: ellipsis;
 }
 
+.middle_list,
+.enter_list,
+.dessert_list {
+  margin-top: 25px;
+}
+
 .entrer1 {
   display: flex;
   flex-direction: row;
@@ -746,6 +818,15 @@ footer a {
 .footer_content {
   background-color: #353535;
   color: #fff;
+  padding: 15px;
+}
+.footer_content ul {
+  font-family: "Roboto";
+  font-weight: bold;
+  margin-top: 20px;
+}
+.footer_content ul li {
+  margin-bottom: 5px;
 }
 
 .fa-utensils,
@@ -756,6 +837,7 @@ footer a {
 
 .logoohmyfood_footer {
   font-family: "Shrikhand", sans-serif;
+  margin-bottom: 25px;
   color: white;
 }
 

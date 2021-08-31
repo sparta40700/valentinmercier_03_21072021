@@ -31,7 +31,6 @@ main {
   justify-content: center;
   width: 100%;
   height: 150px;
-  //box-shadow: 0 0 17px red;
 }
 .presentation_title {
   text-align: center;
@@ -83,18 +82,19 @@ main {
   flex-direction: column;
   margin-top: 20px;
   @include media(400px) {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
     width: 100%;
     margin: 0 auto;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
+    display: flex;
     justify-content: space-between;
   }
 }
 .fonctionnement {
   font-weight: bolder;
+  font-family: $cd-police;
+  font-size: larger;
   margin-top: 40px;
+  margin-bottom: 20px;
+  margin-left: 10px;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -132,10 +132,10 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  //font-weight: bold;
   font-family: roboto;
   @include media(991px) {
     margin-left: 50px;
+    display: flex;
     flex-direction: row;
     width: 90%;
     align-items: center;
@@ -178,6 +178,11 @@ main {
   color: #7e7e7e;
 }
 /******RESTAURANTS*******/
+.name {
+  font-family: $cd-police;
+  font-weight: bold;
+  font-size: medium;
+}
 .rest {
   width: 90%;
   margin: 0 auto;
@@ -203,7 +208,6 @@ main {
   border-radius: 0 0 1.25rem 1.25rem;
   padding: 10px;
   margin-top: -5px;
-  //position: relative;
 }
 .new {
   position: absolute;
@@ -301,15 +305,29 @@ main {
 @keyframes loader {
   0% {
     transform: rotate(0deg);
+    width: 15%;
   }
   10% {
     transform: rotate(0deg);
+    left: 30px;
+  }
+  20% {
+    width: 0%;
+  }
+  30% {
+    width: 15%;
+  }
+  40% {
+    width: 30%;
   }
   70% {
     transform: rotate(240deg);
+    bottom: -10px;
   }
   100% {
     transform: rotate(360deg);
+    bottom: -20px;
+    z-index: -99;
   }
 }
 
@@ -350,10 +368,6 @@ main {
   position: absolute;
   left: 50%;
   z-index: 1;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   width: $component-dimension;
   height: $component-dimension;
   margin-top: 20%;
@@ -361,8 +375,7 @@ main {
   .loader {
     position: relative;
     z-index: -1;
-    justify-content: center;
-    width: 60%;
+    width: 50%;
     height: 45%;
     border: 10px solid transparent;
     border-bottom: 10px solid $loader-color;
@@ -371,6 +384,7 @@ main {
   }
   .pan-container {
     display: flex;
+    flex-direction: row;
     width: 100%;
     animation: pan $timing forwards, pan-loader 5s forwards;
   }

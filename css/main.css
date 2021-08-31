@@ -290,19 +290,24 @@ main {
 
 @media (min-width: 400px) {
   .fonction {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
     width: 100%;
     margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 
 .fonctionnement {
   font-weight: bolder;
+  font-family: "Roboto";
+  font-size: larger;
   margin-top: 40px;
+  margin-bottom: 20px;
+  margin-left: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -388,6 +393,9 @@ main {
 @media (min-width: 991px) {
   .steps_cards {
     margin-left: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -456,6 +464,12 @@ main {
 }
 
 /******RESTAURANTS*******/
+.name {
+  font-family: "Roboto";
+  font-weight: bold;
+  font-size: medium;
+}
+
 .rest {
   width: 90%;
   margin: 0 auto;
@@ -665,18 +679,32 @@ main {
   0% {
     -webkit-transform: rotate(0deg);
             transform: rotate(0deg);
+    width: 15%;
   }
   10% {
     -webkit-transform: rotate(0deg);
             transform: rotate(0deg);
+    left: 30px;
+  }
+  20% {
+    width: 0%;
+  }
+  30% {
+    width: 15%;
+  }
+  40% {
+    width: 30%;
   }
   70% {
     -webkit-transform: rotate(240deg);
             transform: rotate(240deg);
+    bottom: -10px;
   }
   100% {
     -webkit-transform: rotate(360deg);
             transform: rotate(360deg);
+    bottom: -20px;
+    z-index: -99;
   }
 }
 
@@ -684,18 +712,32 @@ main {
   0% {
     -webkit-transform: rotate(0deg);
             transform: rotate(0deg);
+    width: 15%;
   }
   10% {
     -webkit-transform: rotate(0deg);
             transform: rotate(0deg);
+    left: 30px;
+  }
+  20% {
+    width: 0%;
+  }
+  30% {
+    width: 15%;
+  }
+  40% {
+    width: 30%;
   }
   70% {
     -webkit-transform: rotate(240deg);
             transform: rotate(240deg);
+    bottom: -10px;
   }
   100% {
     -webkit-transform: rotate(360deg);
             transform: rotate(360deg);
+    bottom: -20px;
+    z-index: -99;
   }
 }
 
@@ -777,21 +819,8 @@ main {
   position: absolute;
   left: 50%;
   z-index: 1;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: 25%;
-  height: 25%;
+  width: 250px;
+  height: 250px;
   margin-top: 20%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
@@ -800,10 +829,7 @@ main {
 .pan-loader .loader {
   position: relative;
   z-index: -1;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: 60%;
+  width: 50%;
   height: 45%;
   border: 10px solid transparent;
   border-bottom: 10px solid #fdd835;
@@ -816,6 +842,10 @@ main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   width: 100%;
   -webkit-animation: pan 3s forwards, pan-loader 5s forwards;
           animation: pan 3s forwards, pan-loader 5s forwards;
@@ -852,6 +882,17 @@ footer a {
 .footer_content {
   background-color: #353535;
   color: #fff;
+  padding: 15px;
+}
+
+.footer_content ul {
+  font-family: "Roboto";
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.footer_content ul li {
+  margin-bottom: 5px;
 }
 
 .fa-utensils,
@@ -862,6 +903,7 @@ footer a {
 
 .logoohmyfood_footer {
   font-family: "Shrikhand", sans-serif;
+  margin-bottom: 25px;
   color: white;
 }
 
@@ -959,14 +1001,12 @@ h2 {
   width: 11%;
 }
 
-footer {
-  background-color: #353535;
-}
-
 .entrer1 {
   position: relative;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  -webkit-box-shadow: 0 0 17px #aaaaaa;
+          box-shadow: 0 0 17px #aaaaaa;
   padding: 10px;
   border-radius: 1.25rem;
   background: #ffffff;
@@ -990,6 +1030,8 @@ footer {
   background: linear-gradient(#d66cdb, #a45cdb);
   border: none;
   padding: 10px;
+  margin-top: 40px;
+  margin-bottom: 60px;
 }
 
 .btn_link {
@@ -999,6 +1041,11 @@ footer {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  background: #f6f6f6;
+}
+
+.btn_link .commander span {
+  color: white;
 }
 
 .fa-heart {
@@ -1013,6 +1060,7 @@ footer {
   background: -webkit-gradient(linear, left top, left bottom, from(#9356dc), to(#ff79da));
   background: linear-gradient(#9356dc, #ff79da);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-fill-color: transparent;
 }
 
@@ -1027,6 +1075,7 @@ footer {
   background: -webkit-gradient(linear, left top, left bottom, from(#9356dc), to(#ff79da));
   background: linear-gradient(#9356dc, #ff79da);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
@@ -1113,6 +1162,12 @@ footer {
   text-overflow: ellipsis;
 }
 
+.middle_list,
+.enter_list,
+.dessert_list {
+  margin-top: 25px;
+}
+
 .entrer1 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1185,6 +1240,17 @@ footer a {
 .footer_content {
   background-color: #353535;
   color: #fff;
+  padding: 15px;
+}
+
+.footer_content ul {
+  font-family: "Roboto";
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.footer_content ul li {
+  margin-bottom: 5px;
 }
 
 .fa-utensils,
@@ -1195,6 +1261,7 @@ footer a {
 
 .logoohmyfood_footer {
   font-family: "Shrikhand", sans-serif;
+  margin-bottom: 25px;
   color: white;
 }
 /*# sourceMappingURL=main.css.map */

@@ -4,6 +4,15 @@ footer a {
 .footer_content {
   background-color: #353535;
   color: #fff;
+  padding: 15px;
+  ul {
+    font-family: $cd-police;
+    font-weight: bold;
+    margin-top: 20px;
+    li {
+      margin-bottom: 5px;
+    }
+  }
 }
 .fa-utensils,
 .fa-hands-helping {
@@ -12,5 +21,6 @@ footer a {
 }
 .logoohmyfood_footer {
   font-family: $cd-police1;
+  margin-bottom: 25px;
   color: white;
 }

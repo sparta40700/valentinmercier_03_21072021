@@ -9,6 +9,17 @@ footer a {
 .footer_content {
   background-color: #353535;
   color: #fff;
+  padding: 15px;
+}
+
+.footer_content ul {
+  font-family: "Roboto";
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.footer_content ul li {
+  margin-bottom: 5px;
 }
 
 .fa-utensils,
@@ -19,6 +30,7 @@ footer a {
 
 .logoohmyfood_footer {
   font-family: "Shrikhand", sans-serif;
+  margin-bottom: 25px;
   color: white;
 }
 
@@ -116,14 +128,12 @@ h2 {
   width: 11%;
 }
 
-footer {
-  background-color: #353535;
-}
-
 .entrer1 {
   position: relative;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  -webkit-box-shadow: 0 0 17px #aaaaaa;
+          box-shadow: 0 0 17px #aaaaaa;
   padding: 10px;
   border-radius: 1.25rem;
   background: #ffffff;
@@ -147,6 +157,8 @@ footer {
   background: linear-gradient(#d66cdb, #a45cdb);
   border: none;
   padding: 10px;
+  margin-top: 40px;
+  margin-bottom: 60px;
 }
 
 .btn_link {
@@ -156,6 +168,11 @@ footer {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  background: #f6f6f6;
+}
+
+.btn_link .commander span {
+  color: white;
 }
 
 .fa-heart {
@@ -170,6 +187,7 @@ footer {
   background: -webkit-gradient(linear, left top, left bottom, from(#9356dc), to(#ff79da));
   background: linear-gradient(#9356dc, #ff79da);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-fill-color: transparent;
 }
 
@@ -184,6 +202,7 @@ footer {
   background: -webkit-gradient(linear, left top, left bottom, from(#9356dc), to(#ff79da));
   background: linear-gradient(#9356dc, #ff79da);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
@@ -301,6 +320,12 @@ footer {
   right: 10px;
   top: 20px;
   text-overflow: ellipsis;
+}
+
+.middle_list,
+.enter_list,
+.dessert_list {
+  margin-top: 25px;
 }
 
 .entrer1 {

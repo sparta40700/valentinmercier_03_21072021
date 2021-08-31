@@ -5,6 +5,7 @@
   padding: 0;
   text-decoration: none;
 }
+
 main {
   background-color: #f6f6f6;
   border-radius: 1.25rem 1.25rem 0 0;
@@ -61,12 +62,11 @@ h2 {
   border-bottom: 3px solid #99e2d0;
   width: 11%;
 }
-footer {
-  background-color: #353535;
-}
+
 .entrer1 {
   position: relative;
   box-sizing: border-box;
+  box-shadow: 0 0 17px rgb(170, 170, 170);
   padding: 10px;
   border-radius: 1.25rem;
   background: #ffffff;
@@ -81,10 +81,18 @@ footer {
   background: linear-gradient(#d66cdb, #a45cdb);
   border: none;
   padding: 10px;
+  margin-top: 40px;
+  margin-bottom: 60px;
 }
 .btn_link {
   display: flex;
   justify-content: center;
+  background: #f6f6f6;
+  .commander {
+    span {
+      color: white;
+    }
+  }
 }
 
 .fa-heart {
@@ -97,6 +105,7 @@ footer {
 .full_hrt:hover {
   background: linear-gradient($color-primary, $color-secondary);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-fill-color: transparent;
 }
 .shape_hrt {
@@ -106,6 +115,7 @@ footer {
     opacity: 1;
     background: linear-gradient($color-primary, $color-secondary);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
   }
 }
@@ -144,7 +154,6 @@ footer {
   align-items: center;
   justify-content: center;
   transition-duration: 1s;
-  //transform: rotate(180deg);
   color: #ffffff;
   opacity: 0;
   border-radius: 0 1.25rem 1.25rem 0;
@@ -152,14 +161,10 @@ footer {
 
 @keyframes slide-in-left {
   0% {
-    //margin-right: -10px;
     transform: translateX(100px);
-    //transform: scale(0);
   }
   100% {
-    //margin-right: 0px;
     transform: translateX(0px);
-    //transform: scale(1);
   }
 }
 
@@ -168,6 +173,11 @@ footer {
   right: 10px;
   top: 20px;
   text-overflow: ellipsis;
+}
+.middle_list,
+.enter_list,
+.dessert_list {
+  margin-top: 25px;
 }
 .entrer1 {
   display: flex;
@@ -204,7 +214,6 @@ footer {
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
-  //justify-content: space-between;
 }
 .enter_subtile {
   text-overflow: ellipsis;
