@@ -41,10 +41,38 @@ footer a {
 }
 
 main {
+  -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
   background-color: #f6f6f6;
   border-radius: 1.25rem 1.25rem 0 0;
   position: relative;
   margin-top: -25px;
+}
+
+@-webkit-keyframes mooveup {
+  from {
+    -webkit-transform: translateY(50px);
+            transform: translateY(50px);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes mooveup {
+  from {
+    -webkit-transform: translateY(50px);
+            transform: translateY(50px);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    opacity: 1;
+  }
 }
 
 header {
@@ -151,11 +179,18 @@ h2 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  text-align: center;
+  font-weight: bold;
   height: 32px;
-  border-radius: 1.25rem;
+  width: 10%;
+  border-radius: 1.5rem;
+  -webkit-box-shadow: 0 0 17px #aaaaaa;
+          box-shadow: 0 0 17px #aaaaaa;
   background: -webkit-gradient(linear, left top, left bottom, from(#d66cdb), to(#a45cdb));
   background: linear-gradient(#d66cdb, #a45cdb);
   border: none;
+  text-decoration: none;
+  color: white;
   padding: 10px;
   margin-top: 40px;
   margin-bottom: 60px;
@@ -391,5 +426,12 @@ h2 {
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
+}
+
+.entrer1 {
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation: mooveup 2s;
+          animation: mooveup 2s;
 }
 /*# sourceMappingURL=resto.css.map */

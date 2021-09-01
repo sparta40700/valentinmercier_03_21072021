@@ -483,10 +483,22 @@ main {
      object-fit: cover;
 }
 
+.restau1:hover,
+.restau2:hover,
+.restau3:hover,
+.restau4:hover {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+
 .restau1,
 .restau2,
 .restau3,
 .restau4 {
+  -webkit-transition: -webkit-transform 0.4;
+  transition: -webkit-transform 0.4;
+  transition: transform 0.4;
+  transition: transform 0.4, -webkit-transform 0.4;
   position: relative;
   margin-bottom: 10px;
 }

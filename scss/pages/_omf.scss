@@ -194,10 +194,17 @@ main {
   object-fit: cover;
 }
 
+.restau1:hover,
+.restau2:hover,
+.restau3:hover,
+.restau4:hover {
+  transform: rotate(360deg);
+}
 .restau1,
 .restau2,
 .restau3,
 .restau4 {
+  transition: transform 0.4;
   position: relative;
   margin-bottom: 10px;
 }
