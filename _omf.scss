@@ -181,6 +181,7 @@ main {
 }
 .full_hrt:hover {
   background: linear-gradient($color-primary, $color-secondary);
+  -webkit-background-clip: text;
   background-clip: text;
   -webkit-fill-color: transparent;
 }
@@ -190,6 +191,7 @@ main {
   &:hover {
     opacity: 1;
     background: linear-gradient($color-primary, $color-secondary);
+    -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
   }
