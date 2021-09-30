@@ -34,19 +34,30 @@ footer a {
   color: white;
 }
 
+/*****mixins*****/
 * {
   margin: 0;
   padding: 0;
   text-decoration: none;
 }
 
-main {
+.container {
   -webkit-transition-duration: 0.4s;
           transition-duration: 0.4s;
   background-color: #f6f6f6;
   border-radius: 1.25rem 1.25rem 0 0;
   position: relative;
   margin-top: -25px;
+  overflow-x: hidden;
+}
+
+@media (min-width: 900px) {
+  .container {
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 80%;
+    margin: -25px auto 0 auto;
+  }
 }
 
 @-webkit-keyframes mooveup {
@@ -155,19 +166,7 @@ h2 {
   margin-top: 50px;
   border-top: none;
   border-bottom: 3px solid #99e2d0;
-  width: 11%;
-}
-
-.entrer1 {
-  position: relative;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  -webkit-box-shadow: 0 0 17px #aaaaaa;
-          box-shadow: 0 0 17px #aaaaaa;
-  padding: 10px;
-  border-radius: 1.25rem;
-  background: #ffffff;
-  margin-bottom: 10px;
+  width: 4%;
 }
 
 .commander {
@@ -196,6 +195,13 @@ h2 {
   padding: 10px;
   margin-top: 40px;
   margin-bottom: 60px;
+}
+
+.commander:hover {
+  -webkit-transform: scale(1.01);
+          transform: scale(1.01);
+  -webkit-box-shadow: 0 0 17px #aaaaaa;
+          box-shadow: 0 0 17px #aaaaaa;
 }
 
 .btn_link {
@@ -365,7 +371,44 @@ h2 {
   margin-top: 25px;
 }
 
+.entrer1,
+.entrer2,
+.entrer3 {
+  position: relative;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: 0 0 17px #aaaaaa;
+          box-shadow: 0 0 17px #aaaaaa;
+  padding: 10px;
+  border-radius: 1.25rem;
+  background: #ffffff;
+  margin-bottom: 10px;
+}
+
 .entrer1 {
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation: mooveup 2s ease-in-out 200ms;
+          animation: mooveup 2s ease-in-out 200ms;
+}
+
+.entrer2 {
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation: mooveup 2s ease-in-out 400ms;
+          animation: mooveup 2s ease-in-out 400ms;
+}
+
+.entrer3 {
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation: mooveup 2s ease-in-out 600ms;
+          animation: mooveup 2s ease-in-out 600ms;
+}
+
+.entrer1,
+.entrer2,
+.entrer3 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -380,12 +423,20 @@ h2 {
 }
 
 .entrer1:hover span,
-.entrer1 :active span {
+.entrer1 :active span,
+.entrer2:hover span,
+.entrer2 :active span,
+.entrer3:hover span,
+.entrer3 :active span {
   margin-right: 55px;
 }
 
 .entrer1:hover .btn_checked,
-.entrer1 :active .btn_checked {
+.entrer1 :active .btn_checked,
+.entrer2:hover .btn_checked,
+.entrer2 :active .btn_checked,
+.entrer3:hover .btn_checked,
+.entrer3 :active .btn_checked {
   opacity: 1;
   -webkit-animation: slide-in-left 0.5s linear both;
           animation: slide-in-left 0.5s linear both;
@@ -398,14 +449,20 @@ h2 {
 }
 
 .entrer1:hover .btn_checked .add_to_cart,
-.entrer1 :active .btn_checked .add_to_cart {
+.entrer1 :active .btn_checked .add_to_cart,
+.entrer2:hover .btn_checked .add_to_cart,
+.entrer2 :active .btn_checked .add_to_cart,
+.entrer3:hover .btn_checked .add_to_cart,
+.entrer3 :active .btn_checked .add_to_cart {
   -webkit-transform: rotate(360deg);
           transform: rotate(360deg);
   -webkit-transition-duration: 1s;
           transition-duration: 1s;
 }
 
-.entrer1 span {
+.entrer1 span,
+.entrer2 span,
+.entrer3 span {
   -webkit-transition-duration: 0.5ms;
           transition-duration: 0.5ms;
   margin-left: auto;
@@ -428,12 +485,5 @@ h2 {
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
-}
-
-.entrer1 {
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
-  -webkit-animation: mooveup 2s;
-          animation: mooveup 2s;
 }
 /*# sourceMappingURL=resto.css.map */
